@@ -1,10 +1,4 @@
-/* ============================================
-   YATRASETU SIGNUP PAGE - CSS
-   Theme: Navy Blue (#0a2b4c) + Orange (#ff6b35)
-   Light, professional, eye-comfortable
-============================================ */
-
-:root{
+/* :root{
   --navy:#0a2b4c;
   --navy-dark:#071d34;
   --orange:#ff6b35;
@@ -14,7 +8,7 @@
   --text:#1c2530;
   --muted:#6b7787;
   --border:#e3e7ee;
-}
+} */
 
 *{
   margin:0;

@@ -1,0 +1,89 @@
+.navbar-Logo{
+  cursor: pointer;
+}
+
+.navbar-Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  width: 100%;
+  height: 70px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.Setu-Text {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.navbar-Links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-Link {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar-Link:hover {
+  /* background: grey; */
+  color: var(--orange);
+}
+
+.navbar-Link.active {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.navbar-Buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-Buttons button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar-Buttons button:hover {
+  opacity: 0.9;
+}
+
+.navbar-Buttons .Login-button {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.navbar-Buttons .Login-button:hover{
+  background-color: var(--orange-dark);
+  color: var(--text);
+}
+
+.navbar-Buttons .Signup-button {
+  /* background-color: var(--orange-light); */
+  color: var(--text);
+}
+
+.navbar-Buttons .Signup-button:hover {
+  /* background-color: var(--orange-light); */
+  background-color: var(--text);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
