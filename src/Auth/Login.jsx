@@ -1,9 +1,11 @@
 import "../CSS_CODE/LoginCSS.css";
 import { useState } from "react";
-
+import {useNavigate} from "react-router-dom";
 import { FaGoogle, FaApple, FaEye } from "react-icons/fa";
 
 function Login() {
+
+  const navigate = useNavigate();
 
   const [loginForm, setLoginForm] = useState({
     email: "",
@@ -63,13 +65,31 @@ function Login() {
           <form>
 
             <input
+              required
               type="email"
               placeholder="Email Address"
+              name="email"
+              value={loginForm.email}
+              onChange={(e) =>
+                setLoginForm({
+                  ...loginForm,
+                  email: e.target.value,
+                })
+              }
             />
 
             <div className="password-box">
 
               <input
+                required
+                name="password"
+                value={loginForm.password}
+                onChange={(e) =>
+                  setLoginForm({
+                    ...loginForm,
+                    password: e.target.value,
+                  })
+                }
                 type="password"
                 placeholder="Password"
               />
@@ -99,7 +119,7 @@ function Login() {
 
             </div>
 
-            <button className="login-btn">
+            <button onClick={() => navigate("/homepage")} className="login-btn">
               Login
             </button>
 
