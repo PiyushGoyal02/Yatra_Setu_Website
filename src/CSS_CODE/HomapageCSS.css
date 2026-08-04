@@ -1,0 +1,173 @@
+:root {
+  --navy: #0a2b4c;
+  --navy-dark: #071d34;
+  --orange: #ff6b35;
+  --orange-dark: #e8551f;
+  --orange-light: #ff8a5c;
+  --bg: #f2f4f7;
+  --white: #ffffff;
+  --text: #1c2530;
+  --muted: #6b7787;
+  --border: #e3e7ee;
+}
+
+.home-container {
+  position: relative;
+  width: 100%;
+}
+
+.HillsVideo {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(45%);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1400px;
+  text-align: center;
+}
+
+.hero-title {
+  color: var(--white);
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hero-subtitle {
+  color: #dfe6ee;
+  font-size: 16.5px;
+  margin-bottom: 32px;
+}
+
+.booking-card {
+  width: 100%;
+}
+
+/* ---------- Service Icon Tab Row ---------- */
+.search-Icons-Wrappers {
+  width: 100%;
+  background: var(--white);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  padding: 14px 20px 0;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+  gap: 4px;
+}
+
+.search-Icons-Wrappers::-webkit-scrollbar {
+  height: 5px;
+}
+.search-Icons-Wrappers::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+.service-card {
+  min-width: 108px;
+  padding: 6px 10px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom: 3px solid transparent;
+  border-radius: 10px 10px 0 0;
+  flex-shrink: 0;
+}
+
+.service-card:hover {
+  background: var(--bg);
+}
+
+.search-icon {
+  width: 30px;
+  height: 30px;
+  color: var(--text);
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+.service-card p {
+  margin: 0;
+  color: var(--text);
+  font-size: 13.5px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.25;
+  min-height: 32px;
+}
+
+.active-service {
+  border-bottom: 3px solid var(--orange);
+}
+
+.active-service p {
+  color: var(--orange-dark);
+  font-weight: 700;
+}
+
+.active-service .search-icon {
+  color: var(--orange);
+  transform: scale(1.08);
+}
+
+/* ---------- Search Panel Container ---------- */
+.search-wrapper {
+  width: 100%;
+  min-height: 320px;
+  background: var(--white);
+  border-radius: 0 0 16px 16px;
+  padding: 24px 28px 28px;
+  box-sizing: border-box;
+  border-top: 1px solid var(--border);
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  color: var(--muted);
+  gap: 6px;
+}
+
+.coming-soon p {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.coming-soon span {
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 28px;
+  }
+  .hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .HillsVideo {
+    height: 480px;
+  }
+  .service-card {
+    min-width: 88px;
+  }
+}
