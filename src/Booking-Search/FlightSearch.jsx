@@ -187,6 +187,253 @@
 
 // export default FlightSearch;
 
+// import React from "react";
+// import "../CSS_CODE/FlightSearchCSS.css";
+
+// function FlightSearch() {
+
+//   const airportList = [
+//   {
+//     code: "DEL",
+//     city: "New Delhi",
+//     country: "India",
+//     airport: "Indira Gandhi International Airport",
+//   },
+//   {
+//     code: "BOM",
+//     city: "Mumbai",
+//     country: "India",
+//     airport: "Chhatrapati Shivaji Maharaj International Airport",
+//   },
+//   {
+//     code: "BLR",
+//     city: "Bengaluru",
+//     country: "India",
+//     airport: "Kempegowda International Airport",
+//   },
+//   {
+//     code: "MAA",
+//     city: "Chennai",
+//     country: "India",
+//     airport: "Chennai International Airport",
+//   },
+//   {
+//     code: "HYD",
+//     city: "Hyderabad",
+//     country: "India",
+//     airport: "Rajiv Gandhi International Airport",
+//   },
+//   {
+//     code: "CCU",
+//     city: "Kolkata",
+//     country: "India",
+//     airport: "Netaji Subhas Chandra Bose International Airport",
+//   },
+//   {
+//     code: "PNQ",
+//     city: "Pune",
+//     country: "India",
+//     airport: "Pune Airport",
+//   },
+//   {
+//     code: "AMD",
+//     city: "Ahmedabad",
+//     country: "India",
+//     airport: "Sardar Vallabhbhai Patel International Airport",
+//   },
+//   {
+//     code: "GOI",
+//     city: "Goa",
+//     country: "India",
+//     airport: "Dabolim Airport",
+//   },
+//   {
+//     code: "COK",
+//     city: "Kochi",
+//     country: "India",
+//     airport: "Cochin International Airport",
+//   },
+//   {
+//     code: "DXB",
+//     city: "Dubai",
+//     country: "UAE",
+//     airport: "Dubai International Airport",
+//   },
+//   {
+//     code: "AUH",
+//     city: "Abu Dhabi",
+//     country: "UAE",
+//     airport: "Zayed International Airport",
+//   },
+//   {
+//     code: "DOH",
+//     city: "Doha",
+//     country: "Qatar",
+//     airport: "Hamad International Airport",
+//   },
+//   {
+//     code: "SIN",
+//     city: "Singapore",
+//     country: "Singapore",
+//     airport: "Singapore Changi Airport",
+//   },
+//   {
+//     code: "BKK",
+//     city: "Bangkok",
+//     country: "Thailand",
+//     airport: "Suvarnabhumi Airport",
+//   },
+//   {
+//     code: "KUL",
+//     city: "Kuala Lumpur",
+//     country: "Malaysia",
+//     airport: "Kuala Lumpur International Airport",
+//   },
+//   {
+//     code: "HKG",
+//     city: "Hong Kong",
+//     country: "Hong Kong",
+//     airport: "Hong Kong International Airport",
+//   },
+//   {
+//     code: "NRT",
+//     city: "Tokyo",
+//     country: "Japan",
+//     airport: "Narita International Airport",
+//   },
+//   {
+//     code: "HND",
+//     city: "Tokyo",
+//     country: "Japan",
+//     airport: "Haneda Airport",
+//   },
+//   {
+//     code: "ICN",
+//     city: "Seoul",
+//     country: "South Korea",
+//     airport: "Incheon International Airport",
+//   },
+//   {
+//     code: "PEK",
+//     city: "Beijing",
+//     country: "China",
+//     airport: "Beijing Capital International Airport",
+//   },
+//   {
+//     code: "PVG",
+//     city: "Shanghai",
+//     country: "China",
+//     airport: "Shanghai Pudong International Airport",
+//   },
+//   {
+//     code: "LHR",
+//     city: "London",
+//     country: "United Kingdom",
+//     airport: "Heathrow Airport",
+//   },
+//   {
+//     code: "CDG",
+//     city: "Paris",
+//     country: "France",
+//     airport: "Charles de Gaulle Airport",
+//   },
+//   {
+//     code: "FRA",
+//     city: "Frankfurt",
+//     country: "Germany",
+//     airport: "Frankfurt Airport",
+//   },
+//   {
+//     code: "AMS",
+//     city: "Amsterdam",
+//     country: "Netherlands",
+//     airport: "Amsterdam Schiphol Airport",
+//   },
+//   {
+//     code: "JFK",
+//     city: "New York",
+//     country: "USA",
+//     airport: "John F. Kennedy International Airport",
+//   },
+//   {
+//     code: "LAX",
+//     city: "Los Angeles",
+//     country: "USA",
+//     airport: "Los Angeles International Airport",
+//   },
+//   {
+//     code: "YYZ",
+//     city: "Toronto",
+//     country: "Canada",
+//     airport: "Toronto Pearson International Airport",
+//   },
+//   {
+//     code: "SYD",
+//     city: "Sydney",
+//     country: "Australia",
+//     airport: "Sydney Kingsford Smith Airport",
+//   }
+// ];
+
+//   return (
+//     <div>
+//       {/* <p>Flight Search</p> */}
+
+//       {/* Trip type options */}
+//       <div className="trip-type-options">
+//         <input type="radio" id="oneWay" name="tripType" defaultChecked />
+//         <label htmlFor="oneWay" className="trip-type-option">
+//           One Way
+//         </label>
+
+//         <input type="radio" id="roundTrip" name="tripType" />
+//         <label htmlFor="roundTrip" className="trip-type-option">
+//           Round Trip
+//         </label>
+
+//         <input type="radio" id="multiCity" name="tripType" />
+//         <label htmlFor="multiCity" className="trip-type-option">
+//           Multi City
+//         </label>
+//       </div>
+
+//       {/* Search fields */}
+//       <div className="search-fields">
+
+//         <div className="From-block">
+//           <p>From</p>
+
+
+
+//         </div>
+
+//         {
+//           airportList.map((airport) => (
+//             <div key={airport.code} className="airport-option">
+
+//               <div className="airport-code">
+//                 {airport.code}
+//               </div>
+
+//               <div className="airport-details">
+//                 <h4>
+//                   {airport.city}, <span>{airport.country}</span>
+//                 </h4>
+
+//                 <p>{airport.airport}</p>
+//               </div>
+
+//             </div>
+//           ))
+//         }
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default FlightSearch;
+
+
 import React from "react";
 
 function FlightSearch() {
@@ -194,7 +441,7 @@ function FlightSearch() {
     <div>
       <p>Flight Search</p>
     </div>
-  )
+  );
 }
 
 export default FlightSearch;

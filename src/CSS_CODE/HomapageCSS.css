@@ -18,7 +18,7 @@
 
 .HillsVideo {
   width: 100%;
-  height: 550px;
+  height: 650px;
   object-fit: cover;
   display: block;
   filter: brightness(45%);
@@ -26,7 +26,7 @@
 
 .hero-content {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
@@ -36,7 +36,8 @@
 
 .hero-title {
   color: var(--white);
-  font-size: 44px;
+  font-size: 35px;
+  text-align: start;
   font-weight: 800;
   margin-bottom: 10px;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
@@ -46,13 +47,13 @@
   color: #dfe6ee;
   font-size: 16.5px;
   margin-bottom: 32px;
+  text-align: start;
 }
 
 .booking-card {
   width: 100%;
 }
 
-/* ---------- Service Icon Tab Row ---------- */
 .search-Icons-Wrappers {
   width: 100%;
   background: var(--white);
@@ -124,7 +125,6 @@
   transform: scale(1.08);
 }
 
-/* ---------- Search Panel Container ---------- */
 .search-wrapper {
   width: 100%;
   min-height: 320px;

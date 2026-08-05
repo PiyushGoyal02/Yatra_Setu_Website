@@ -1,10 +1,10 @@
 import Navbar from "./Navbar";
 import { useState } from "react";
 import "../CSS_CODE/HomapageCSS.css";
-import FlightSearch from "../Booking-Search/FlightSearch";
 import HotelSearch from "../Booking-Search/HotelSearch";
 import TrainSearch from "../Booking-Search/TrainSearch";
 import VillaSearch from "../Booking-Search/VillaSearch";
+import FlightSearch from "../Booking-Search/FlightSearch";
 import PackageSearch from "../Booking-Search/PackageSearch";
 import HillsVideo from "../assets/WhatsApp Video 2026-08-04 at 22.48.21.mp4";
 
