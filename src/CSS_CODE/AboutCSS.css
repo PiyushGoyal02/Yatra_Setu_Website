@@ -1,0 +1,147 @@
+.HeaderSectionDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  background-image: linear-gradient(to bottom, var(--navy-mid), var(--navy));
+}
+
+.AboutYatraSetu,
+.IndianFastestText {
+  color: var(--white);
+}
+
+.AboutYatraSetu {
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.IndianFastestText {
+  margin-top: 20px;
+  font-size: large;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.ratingSectionDiv {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  color: var(--white);
+}
+
+.rating p {
+  color: var(--orange);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.rating span {
+  font-size: small;
+  font-weight: 400;
+}
+
+.OurStoryDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  padding: 80px 120px;
+  background: rgb(221, 219, 219);
+}
+
+.StoryContent {
+  flex: 1;
+}
+
+.OurStry {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 25px;
+}
+
+.Thought {
+  width: 100%;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: .5px;
+  color: #444;
+}
+
+.VideoContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LiveGlobe {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, .18);
+  transition: .4s;
+}
+
+.LiveGlobe:hover {
+  transform: scale(1.02);
+}
+
+.StandForSection{
+  padding: 40px;
+  background-color: var(--white);
+}
+
+.SectionTitle{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ServicesContant {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  border-left: 5px solid var(--orange);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+  transition: .35s ease;
+  cursor: pointer;
+  height: auto;
+  width: auto;
+}
+
+.ServicesContant:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, .15);
+}
+
+.ServicesDiv{
+  display: flex;
+  align-items: center;
+  padding: 0 155px;
+  gap: 30px;
+}
+
+.ServicesContant h5 {
+  font-size: 13px;
+  color: var(--navy);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.ServicesContant p {
+  color: #666;
+  line-height: 18px;
+  font-size: 12px;
+}

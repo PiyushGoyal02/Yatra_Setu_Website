@@ -290,10 +290,10 @@ function Homepage() {
         <img
           src={DifferentCities}
           alt="Different Cities"
-          className="DifferentCities"
+          className=" "
         />
       </div>
-
+ 
       <Footer/>
     </>
   );
