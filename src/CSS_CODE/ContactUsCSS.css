@@ -1,0 +1,203 @@
+/*  HEADER */
+
+.headerContantContactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--navy-mid), var(--navy));
+}
+
+.headerContantContactUs span {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.headerContantContactUs p {
+    color: var(--placeholder);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* MAIN SECTION */
+
+.LeftAndRightSectionDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 4%;
+}
+
+/*  LEFT SIDE  */
+
+.LeftSideDetails {
+    width: 40%;
+    padding: 35px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, var(--navy-mid), var(--navy));
+    color: var(--white);
+    box-sizing: border-box;
+}
+
+.HaveQuestions {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.LeftSideDetails > p {
+    color: var(--placeholder);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.SingleDetails {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.SingleDetails:last-child {
+    border-bottom: none;
+}
+
+.SingleDetails:hover {
+    transform: translateX(8px);
+}
+
+.iconBox {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.SingleDetails:hover .iconBox {
+    background: var(--orange);
+    transform: rotate(-8deg) scale(1.08);
+}
+
+.LeftSideDetailsTextDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.LeftSideDetailsTextDiv p {
+    margin: 0;
+}
+
+.HeadingSectionContant {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.TextDetails {
+    color: var(--placeholder);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/*  RIGHT SIDE FORM */
+
+.FromMainDiv {
+    width: 38%;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.SendMessage {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--navy);
+}
+
+.InputDetails {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
+
+.InputDetails label {
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.InputDetails input,
+.TextAreaInputTag {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f5f5f5;
+    color: #000;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.InputDetails input::placeholder,
+.TextAreaInputTag::placeholder {
+    color: #888;
+}
+
+.InputDetails input:focus,
+.TextAreaInputTag:focus {
+    border-color: var(--orange);
+    background: #fff;
+}
+
+.TextAreaInputTag {
+    height: 120px;
+    resize: vertical;
+}
+
+.ButtonButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.SubmitButton {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--orange-light);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.SubmitButton:hover {
+    background: var(--orange);
+    color: #000;
+    transform: scale(1.03);
+}
+
