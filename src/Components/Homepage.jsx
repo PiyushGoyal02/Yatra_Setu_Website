@@ -290,7 +290,7 @@ function Homepage() {
         <img
           src={DifferentCities}
           alt="Different Cities"
-          className=" "
+          className=" CitiesImages"
         />
       </div>
  

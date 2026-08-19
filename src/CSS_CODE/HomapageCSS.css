@@ -369,21 +369,10 @@
   margin-bottom: 30px;
 }
 
-@media (max-width: 900px) {
-  .hero-title {
-    font-size: 28px;
-  }
-
-  .hero-subtitle {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-
-  .HillsVideo {
-    height: 480px;
-  }
-
-  .service-card {
-    min-width: 88px;
-  }
+.CitiesImages{
+  width: 100%;
+  padding: 0 155px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  cursor: pointer;
 }
