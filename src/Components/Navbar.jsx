@@ -31,15 +31,15 @@ function Navbar() {
         </a>
 
         <a
-          className={`navbar-Link ${getActiveClass("/flights")}`}
+          className={`navbar-Link ${getActiveClass("/flight")}`}
           href="/flight"
         >
           Flights
         </a>
 
         <a
-          className={`navbar-Link ${getActiveClass("/trains")}`}
-          href="/trains"
+          className={`navbar-Link ${getActiveClass("/train")}`}
+          href="/train"
         >
           Trains
         </a>
