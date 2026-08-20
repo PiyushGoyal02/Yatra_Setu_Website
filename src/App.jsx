@@ -7,6 +7,7 @@ import Signup from "./Auth/Signup";
 import About from "./Components/About";
 import ContactUs from "./Components/ContactUs"
 import Hotel from "./Components/Hotel";
+import Flight from "./Components/Flight";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/about" element={<About/>}></Route>
       <Route path="/contactUs" element={<ContactUs/>}></Route>
       <Route path="/hotel" element={<Hotel/>}></Route>
+      <Route path="/flight" element={<Flight/>}></Route>
     </Routes>
   );
 }

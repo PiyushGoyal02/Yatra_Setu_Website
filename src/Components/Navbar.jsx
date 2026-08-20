@@ -32,7 +32,7 @@ function Navbar() {
 
         <a
           className={`navbar-Link ${getActiveClass("/flights")}`}
-          href="/flights"
+          href="/flight"
         >
           Flights
         </a>

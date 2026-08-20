@@ -1,0 +1,210 @@
+.flightLandingTakeOff {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(45%);
+  position: relative;
+}
+
+.FlightVideoTextDiv {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 900px;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.FlightVideoTextDiv h1 {
+  margin: 0 0 8px;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.FlightVideoTextDiv p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.LeftRightFlightSection {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 0 155px;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.flightSearchDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  /* padding: 100px; */
+}
+
+.singleFlightDetailsDiv {
+  padding: 20px;
+  display: flex;
+  width: 1100px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease;
+}
+
+.singleFlightDetailsDiv:hover{
+  transform: scale(1.02);
+}
+
+.CodeAndName {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.airlineCode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background-color: var(--orange-light);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.airlineName {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.ToFromDivSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.DepartureTime-DepartureCity,
+.flightArrivalTimeAndCity {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flightDepartureText,
+.flightArrivalTime {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.flightDepartureCity,
+.flightArrivalCity {
+  font-size: 12px;
+  /* font-weight: 600; */
+  color: var(--muted);
+}
+
+.dotLineDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
+.flightDuration,
+.flightStops {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.flightDotLineSection {
+  display: flex;
+  align-items: center;
+}
+
+.orangeDotSpan {
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--orange);
+  border-radius: 100%;
+  background-color: var(--orange);
+}
+
+.FlightLineDuration {
+  width: 480px;
+  border: 1px solid var(--border);
+}
+
+.flightPrice {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.perTraveller {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.tagLineClassDiv {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.tagsClass {
+  /* display: flex; */
+  font-size: 11px;
+  height: auto;
+  width: auto;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: var(--muted);
+  color: var(--white);
+  /* border: 1px solid black; */
+}
+
+.flightSubmitButton {
+  background-color: var(--orange);
+  width: 120px;
+  height: 30px;
+  padding: 3px;
+  border-style: none;
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.flightSubmitButton:hover {
+  background-color: var(--orange-light);
+  color: var(--text);
+}
+
+.flightPriceDetails {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  flex-direction: column;
+  gap: 5px;
+}

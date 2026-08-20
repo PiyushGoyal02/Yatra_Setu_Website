@@ -7,6 +7,7 @@ import Hotel3 from "../assets/Hotel3.jpeg";
 import Hotel4 from "../assets/Hotel4.webp";
 import Hotel5 from "../assets/Hotel5.jpg";
 import Hotel6 from "../assets/Hotel6.webp";
+import Footer from "../Components/Footer"
 import HotelVideo from "../assets/HotelVideo.mp4";
 
 function Hotel() {
@@ -483,6 +484,8 @@ function Hotel() {
         </div>
 
       </div>
+
+      <Footer/>
 
     </div>
   );
