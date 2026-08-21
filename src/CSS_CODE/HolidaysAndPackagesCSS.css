@@ -74,7 +74,7 @@
 .holidayPackagesFilterTitle {
   margin: 0;
   color: var(--text);
-  font-size: 27px;
+  font-size: 18.5px;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -96,8 +96,8 @@
 .holidayPackagesFilterHeading {
   margin: 0 0 15px;
   color: var(--muted);
-  font-size: 18px;
-  line-height: 1.2;
+  font-size: 13px;
+  line-height: 1.2; 
   font-weight: 700;
   letter-spacing: 0.4px;
 }
@@ -117,8 +117,8 @@
 }
 
 .holidayPackagesCheckbox {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   margin: 0;
   flex-shrink: 0;
   cursor: pointer;
@@ -127,7 +127,7 @@
 
 .holidayPackagesCheckboxLabel {
   color: var(--text);
-  font-size: 17px;
+  font-size: 14px;
   line-height: 1.3;
   font-weight: 500;
 }
@@ -160,13 +160,11 @@
 
 .holidayPackagesBudgetRange::-webkit-slider-runnable-track {
   height: 7px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     var(--orange) 0%,
-    var(--orange) 22%,
-    #4a4a4a 22%,
-    #4a4a4a 100%
-  );
+    var(--orange) 22%
+  ); */
   border-radius: 10px;
 }
 

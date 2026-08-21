@@ -10,6 +10,7 @@ import Hotel from "./Components/Hotel";
 import Flight from "./Components/Flight";
 import Train from "./Components/Train";
 import HolidaysAndPackages from "./Components/HolidaysAndPackages"
+import VillaHomeStay from "./Components/VillaHomeStay";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/flight" element={<Flight/>}></Route>
       <Route path="/train" element={<Train/>}></Route>
       <Route path="/holidaysAndPackages" element={<HolidaysAndPackages/>}></Route>
+      <Route path="/villaAndHomeStay" element={<VillaHomeStay/>}></Route>
     </Routes>
   );
 }

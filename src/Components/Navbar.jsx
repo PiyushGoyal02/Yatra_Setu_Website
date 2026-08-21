@@ -45,8 +45,8 @@ function Navbar() {
         </a>
 
         <a
-          className={`navbar-Link ${getActiveClass("/villa")}`}
-          href="/villa"
+          className={`navbar-Link ${getActiveClass("/villaAndHomeStay")}`}
+          href="/villaAndHomeStay"
         >
           Villa & Homestays
         </a>
