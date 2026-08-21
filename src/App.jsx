@@ -9,6 +9,7 @@ import ContactUs from "./Components/ContactUs"
 import Hotel from "./Components/Hotel";
 import Flight from "./Components/Flight";
 import Train from "./Components/Train";
+import HolidaysAndPackages from "./Components/HolidaysAndPackages"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/hotel" element={<Hotel/>}></Route>
       <Route path="/flight" element={<Flight/>}></Route>
       <Route path="/train" element={<Train/>}></Route>
+      <Route path="/holidaysAndPackages" element={<HolidaysAndPackages/>}></Route>
     </Routes>
   );
 }

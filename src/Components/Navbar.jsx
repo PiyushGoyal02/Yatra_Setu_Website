@@ -52,8 +52,8 @@ function Navbar() {
         </a>
 
         <a
-          className={`navbar-Link ${getActiveClass("/holidays")}`}
-          href="/holidays"
+          className={`navbar-Link ${getActiveClass("/holidaysAndPackages")}`}
+          href="/holidaysAndPackages"
         >
           Holidays Packages
         </a>

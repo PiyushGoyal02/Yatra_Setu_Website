@@ -132,7 +132,7 @@
   border-radius: 50%;
   border: 1px solid #ddd;
   background: #fff;
-  color: #3b82f6;
+  color: var(--orange);
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
@@ -141,7 +141,7 @@
 }
 
 .swap-btn:hover{
-  background-color: #3b82f6;
+  background-color: var(--orange);
   color: #fff;
   transform: translate(-50%, -50%) rotate(180deg);
 }
@@ -181,7 +181,7 @@
 }
 
 .date-arrow-icon{
-  color: #999;
+  color: var(--orange-light);
   font-size: 14px;
   transition: transform 0.2s ease;
   flex-shrink: 0;
@@ -545,9 +545,9 @@
 }
 
 .count-pill.active{
-  background: #3b82f6;
+  background: var(--orange);
   color: #fff;
-  border-color: #3b82f6;
+  border-color: var(--orange);
 }
 
 .apply-btn{
@@ -557,7 +557,7 @@
   padding: 12px;
   border: none;
   border-radius: 30px;
-  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  background: linear-gradient(90deg, var(--orange), var(--orange-light));
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -598,7 +598,7 @@
 }
 
 .cabin-option-active{
-  border-color: #3b82f6;
+  border-color: var(--orange);
   background: linear-gradient(90deg, rgba(59,130,246,0.06), rgba(59,130,246,0));
 }
 
@@ -620,7 +620,7 @@
 }
 
 .radio-checked{
-  border-color: #3b82f6;
+  border-color: var(--orange);
 }
 
 .radio-checked::after{
@@ -631,7 +631,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #3b82f6;
+  background: var(--orange);
 }
 
 .cabin-option-radio h4{
@@ -652,7 +652,7 @@
   align-items: center;
   gap: 5px;
   font-size: 13px;
-  color: #3b82f6;
+  /* color: var(--orange-light); */
   font-weight: 500;
 }
 
