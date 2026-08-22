@@ -1,36 +1,49 @@
 import "../CSS_CODE/LoginCSS.css";
 import { useState } from "react";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { FaEyeSlash } from "react-icons/fa";
 import { FaGoogle, FaApple, FaEye } from "react-icons/fa";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 function Login() {
 
   const navigate = useNavigate();
 
+  const [eyeLash, setEyeLash] = useState(false);
   const [loginForm, setLoginForm] = useState({
     email: "",
     password: "",
   });
-  
+
+  // console.log(loginForm)
+
+  const LoginSubmitHandler = async (e) => {
+    e.preventDefault()
+    try{
+      const response = await axios.post(``, loginForm)
+
+      console.log(response.data)
+      toast.success('Login Successfully');
+
+    }catch(error){
+      console.log(error.message)
+      toast.error('This is an error!');
+    }
+  }
+
   return (
     <div className="login-page">
 
       {/* Left Section */}
-
       <div className="left-section">
 
         <div className="overlay">
 
-          <div className="logo">
-           YATRA SETU 
-          </div>
-
-          <button className="back-btn">
-            ← Back to Website
-          </button>
+          <div className="logo">YATRA SETU</div>
+          <button className="back-btn">← Back to Website</button>
 
           <div className="left-content">
-
             <h2>
               Welcome Back,
               <br />
@@ -42,27 +55,23 @@ function Login() {
               <span className="active"></span>
               <span></span>
             </div>
-
           </div>
-
         </div>
 
       </div>
 
       {/* Right Section */}
-
       <div className="right-section">
 
         <div className="form-box">
 
           <h1>Welcome Back</h1>
-
           <p className="login-link">
             Don't have an account?
             <a href="/signup"> Create Account</a>
           </p>
 
-          <form>
+          <form onSubmit={LoginSubmitHandler}>
 
             <input
               required
@@ -79,7 +88,6 @@ function Login() {
             />
 
             <div className="password-box">
-
               <input
                 required
                 name="password"
@@ -90,12 +98,13 @@ function Login() {
                     password: e.target.value,
                   })
                 }
-                type="password"
+                type={eyeLash ? "text" : "password"}
                 placeholder="Password"
               />
 
-              <FaEye />
-
+              <span onClick={() => setEyeLash(!eyeLash)}>
+                {eyeLash ? <FaEyeSlash /> : <FaEye />}
+              </span>
             </div>
 
             <div className="login-options">
@@ -106,22 +115,15 @@ function Login() {
                   type="checkbox"
                   id="rememberMe"
                 />
-
-                <label htmlFor="rememberMe">
-                  Remember Me
-                </label>
+                <label htmlFor="rememberMe">Remember Me</label>
 
               </div>
 
-              <a href="/forgot-password">
-                Forgot Password?
-              </a>
+              <a href="/forgot-password">Forgot Password?</a>
 
             </div>
 
-            <button onClick={() => navigate("/homepage")} className="login-btn">
-              Login
-            </button>
+            <button type="submit" className="login-btn">Login</button>
 
           </form>
 
@@ -130,17 +132,8 @@ function Login() {
           </div>
 
           <div className="social-buttons">
-
-            <button>
-              <FaGoogle />
-              Google
-            </button>
-
-            <button>
-              <FaApple />
-              Apple
-            </button>
-
+            <button><FaGoogle />Google</button>
+            <button><FaApple />Apple</button>
           </div>
 
         </div>

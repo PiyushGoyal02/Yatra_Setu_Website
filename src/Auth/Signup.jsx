@@ -36,17 +36,12 @@ function Signup() {
     <div className="signup-page">
 
       {/* Left Section */}
-
       <div className="left-section">
         <div className="overlay">
 
-          <div className="logo">
-            YATRA SETU
-          </div>
+          <div className="logo">YATRA SETU</div>
 
-          <button className="back-btn">
-            Back to Website →
-          </button>
+          <button className="back-btn">Back to Website →</button>
 
           <div className="left-content">
 
@@ -68,13 +63,11 @@ function Signup() {
       </div>
 
       {/* Right Section */}
-
       <div className="right-section">
 
         <div className="form-box">
 
           <h1>Create an Account</h1>
-
           <p className="login-link">
             Already have an account?
             <a href="/"> Login</a>
@@ -83,7 +76,6 @@ function Signup() {
           <form onSubmit={handleSubmit}>
 
             {/* Name */}
-
             <div className="row">
 
               <input
@@ -193,10 +185,7 @@ function Signup() {
             </label>
 
             {/* Submit */}
-
-            <button onClick={() => navigate("/homepage")}  type="submit" className="signup-btn">
-              Create Account
-            </button>
+            <button type="submit" className="signup-btn">Create Account</button>
 
           </form>
 
