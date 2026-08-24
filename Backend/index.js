@@ -21,6 +21,10 @@ app.use(cookieParser());  // It's works for login and logout form data.
 const dataBase = require('./Config/DBConect')
 dataBase.Dbconnect();
 
+const AuthRoute = require("./Routes/AuthRoutes")
+
+app.use("/api/auth", AuthRoute)
+
 // Root Route
 app.get("/", (req, res) => {
   res.send("Hello From Backend!");

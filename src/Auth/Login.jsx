@@ -12,8 +12,8 @@ function Login() {
 
   const [eyeLash, setEyeLash] = useState(false);
   const [loginForm, setLoginForm] = useState({
-    email: "",
-    password: "",
+    Email: "",
+    Password: "",
   });
 
   // console.log(loginForm)
@@ -21,9 +21,10 @@ function Login() {
   const LoginSubmitHandler = async (e) => {
     e.preventDefault()
     try{
-      const response = await axios.post(``, loginForm)
+      const response = await axios.post(`http://localhost:4000/api/auth/login`, loginForm)
 
       console.log(response.data)
+      navigate("/homepage")
       toast.success('Login Successfully');
 
     }catch(error){
@@ -75,14 +76,14 @@ function Login() {
 
             <input
               required
-              type="email"
+              type="Email"
               placeholder="Email Address"
               name="email"
-              value={loginForm.email}
+              value={loginForm.Email}
               onChange={(e) =>
                 setLoginForm({
                   ...loginForm,
-                  email: e.target.value,
+                  Email: e.target.value,
                 })
               }
             />
@@ -90,12 +91,12 @@ function Login() {
             <div className="password-box">
               <input
                 required
-                name="password"
-                value={loginForm.password}
+                name="Password"
+                value={loginForm.Password}
                 onChange={(e) =>
                   setLoginForm({
                     ...loginForm,
-                    password: e.target.value,
+                    Password: e.target.value,
                   })
                 }
                 type={eyeLash ? "text" : "password"}

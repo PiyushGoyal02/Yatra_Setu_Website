@@ -2,19 +2,21 @@ import "../CSS_CODE/SignupCSS.css";
 import { useState } from "react";
 import {useNavigate} from "react-router-dom";
 import { FaGoogle, FaApple, FaEye, FaEyeSlash } from "react-icons/fa";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 function Signup() {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
   const [signForm, setSignForm] = useState({
-    name: "",
-    last: "",
-    mobile: "",
-    dob: "",
-    gender: "",
-    email: "",
-    password: "",
+    FirstName: "",
+    LastName: "",
+    MobNumber: "",
+    DOB: "",
+    Gender: "",
+    Email: "",
+    Password: "",
   });
 
   const handleChange = (e) => {
@@ -24,12 +26,27 @@ function Signup() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    try{
 
-    console.log(signForm);
+      const response = await axios.post(`http://localhost:4000/api/auth/signup`, signForm,
+        {
+          headers: {
+            "Content-Type": "application/json"
+          }
+        }
+      )
 
-    // API Call Here
+      console.log(response.data)
+      navigate("/homepage")
+      toast.success("User Signup")
+
+    }catch(error){
+      console.log(error.message)
+      toast.error("Signup Error")
+    }
   };
 
   return (
@@ -80,18 +97,18 @@ function Signup() {
 
               <input
                 type="text"
-                name="name"
+                name="FirstName"
                 placeholder="First Name"
-                value={signForm.name}
+                value={signForm.FirstName}
                 onChange={handleChange}
                 required
               />
 
               <input
                 type="text"
-                name="last"
+                name="LastName"
                 placeholder="Last Name"
-                value={signForm.last}
+                value={signForm.LastName}
                 onChange={handleChange}
                 required
               />
@@ -102,9 +119,9 @@ function Signup() {
 
             <input
               type="email"
-              name="email"
+              name="Email"
               placeholder="Email Address"
-              value={signForm.email}
+              value={signForm.Email}
               onChange={handleChange}
               required
             />
@@ -121,9 +138,9 @@ function Signup() {
 
               <input
                 type="text"
-                name="mobile"
+                name="MobNumber"
                 placeholder="Mobile Number"
-                value={signForm.mobile}
+                value={signForm.MobNumber}
                 onChange={handleChange}
                 required
               />
@@ -136,9 +153,9 @@ function Signup() {
 
               <input
                 type={showPassword ? "text" : "password"}
-                name="password"
+                name="Password"
                 placeholder="Password"
-                value={signForm.password}
+                value={signForm.Password}
                 onChange={handleChange}
                 required
               />
@@ -156,8 +173,8 @@ function Signup() {
 
             <input
               type="date"
-              name="dob"
-              value={signForm.dob}
+              name="DOB"
+              value={signForm.DOB}
               onChange={handleChange}
               required
             />
@@ -165,8 +182,8 @@ function Signup() {
             {/* Gender */}
 
             <select
-              name="gender"
-              value={signForm.gender}
+              name="Gender"
+              value={signForm.Gender}
               onChange={handleChange}
               required
             >
