@@ -22,8 +22,12 @@ const dataBase = require('./Config/DBConect')
 dataBase.Dbconnect();
 
 const AuthRoute = require("./Routes/AuthRoutes")
+const villaJSON = require("./Routes/villaJSONRoute")
+const villaDataGet = require("./Routes/villaGetDetails")
 
 app.use("/api/auth", AuthRoute)
+app.use("/api/villaJSON", villaJSON)
+app.use("/api/getVillaJSON", villaDataGet)
 
 // Root Route
 app.get("/", (req, res) => {

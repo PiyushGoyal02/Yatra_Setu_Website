@@ -11,8 +11,10 @@ import Flight from "./Components/Flight";
 import Train from "./Components/Train";
 import HolidaysAndPackages from "./Components/HolidaysAndPackages"
 import VillaHomeStay from "./Components/VillaHomeStay";
+import VillaJSONHook from "./Custom-Hook/VillaJSON";
 
 function App() {
+  VillaJSONHook();
   return (
     <Routes>
       <Route path="/" element={<Login />} />
