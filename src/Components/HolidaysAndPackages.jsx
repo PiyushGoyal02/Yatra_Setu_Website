@@ -1,199 +1,21 @@
 import React from "react";
 import Navbar from "./Navbar"
 import Footer from "./Footer"
-import BaliBeach from "../assets/BaliHoneyMoon.png"
-import DubaiTour from "../assets/Burj-Khalifa-Dubai.webp"
-import kerlaTour from "../assets/Kerla-Tour.jpg"
 import "../CSS_CODE/HolidaysAndPackagesCSS.css"
 import HolidayAndPackages from "../assets/HolidaysAndPackagesVideo.mp4"
+import getHolidaysPackages from "../Custom-Hook/getHolidaysPackages";
 
 function HolidaysAndPackages() {
 
-  const getTravelPackages = [
-    {
-      id: 1,
-      packageId: "PKG-BALI-001",
-      destinationId: "DEST-BALI",
-      categoryId: "CAT-HONEYMOON",
-      durationId: "DUR-6N7D",
-      priceId: "PRICE-BALI-42999",
-      image: BaliBeach,
-      title: "Bali Honeymoon Package",
-      destination: "Bali, Indonesia",
-      departure: "Delhi / Mumbai",
-      travelers: "2 Adults",
-      rating: 4.7,
-      bookings: 860,
+  const { holidaysData } = getHolidaysPackages();
 
-      badge: "6N/7D · HONEYMOON SPECIAL",
+  const travelPackages = Array.isArray(holidaysData) ? holidaysData : [];
 
-      inclusions: [
-        "✈ Return Flights",
-        "🏨 Resort Stay",
-        "🍽 Daily Breakfast",
-        "🚗 Airport Transfers"
-      ],
-
-      itinerary: [
-        {
-          id: "BALI-DAY-01",
-          day: 1,
-          title: "Arrival in Bali, transfer to resort, evening at leisure"
-        },
-        {
-          id: "BALI-DAY-02",
-          day: 2,
-          title: "Ubud Village tour, rice terraces & monkey forest"
-        },
-        {
-          id: "BALI-DAY-03",
-          day: 3,
-          title: "Nusa Penida island day trip with snorkeling"
-        },
-        {
-          id: "BALI-DAY-04",
-          day: 4,
-          title: "Leisure day at resort / optional spa & water sports"
-        },
-        {
-          id: "BALI-DAY-05",
-          day: 5,
-          title: "Kintamani volcano & coffee plantation tour"
-        },
-        {
-          id: "BALI-DAY-06",
-          day: 6,
-          title: "Uluwatu Temple sunset & Kecak dance show"
-        },
-        {
-          id: "BALI-DAY-07",
-          day: 7,
-          title: "Departure transfer to airport"
-        }
-      ],
-
-      originalPrice: 49999,
-      price: 42999,
-      currency: "INR",
-      priceUnit: "person"
-    },
-
-    {
-      id: 2,
-      packageId: "PKG-DUBAI-002",
-      destinationId: "DEST-DUBAI",
-      categoryId: "CAT-CITY-EXPLORER",
-      durationId: "DUR-5N6D",
-      priceId: "PRICE-DUBAI-34999",
-      image: DubaiTour,
-      title: "Dubai City Explorer Package",
-      destination: "Dubai, UAE",
-      departure: "Delhi / Mumbai",
-      travelers: "2 Adults",
-      rating: 4.6,
-      bookings: 1120,
-
-      badge: "5N/6D · CITY EXPLORER",
-
-      inclusions: [
-        "Return Flights",
-        "4-Star Hotel",
-        "Desert Safari",
-        "Visa Assistance"
-      ],
-
-      itinerary: [
-        {
-          id: "DUBAI-DAY-01",
-          day: 1,
-          title: "Arrival, hotel check-in, Dubai Marina evening cruise"
-        },
-        {
-          id: "DUBAI-DAY-02",
-          day: 2,
-          title: "Burj Khalifa & Dubai Mall, Fountain Show"
-        },
-        {
-          id: "DUBAI-DAY-03",
-          day: 3,
-          title: "Desert Safari with BBQ dinner & dune bashing"
-        },
-        {
-          id: "DUBAI-DAY-04",
-          day: 4,
-          title: "Abu Dhabi day trip — Sheikh Zayed Mosque"
-        },
-        {
-          id: "DUBAI-DAY-05",
-          day: 5,
-          title: "Leisure day / optional theme park visit"
-        },
-        {
-          id: "DUBAI-DAY-06",
-          day: 6,
-          title: "Departure transfer to airport"
-        }
-      ],
-
-      originalPrice: 39999,
-      price: 34999,
-      currency: "INR",
-      priceUnit: "person"
-    },
-
-    {
-      id: 3,
-      packageId: "PKG-KERALA-003",
-      destinationId: "DEST-KERALA",
-      categoryId: "CAT-FAMILY",
-      durationId: "DUR-4N5D",
-      priceId: "PRICE-KERALA-22499",
-      image: kerlaTour,
-      title: "Kerala Backwater Bliss",
-      destination: "Kochi - Alleppey - Munnar",
-      departure: "Any City",
-      travelers: "2 Adults + 1 Child",
-      rating: 4.8,
-      bookings: 640,
-
-      badge: "4N/5D · FAMILY FRIENDLY",
-
-      inclusions: [
-        "Houseboat Stay",
-        "Resort Stay",
-        "All Meals",
-        "Private Transfers"
-      ],
-
-      itinerary: [
-        {
-          id: "KERALA-DAY-01",
-          day: 1,
-          title: "Arrival in Kochi, local sightseeing, transfer to Munnar"
-        },
-        {
-          id: "KERALA-DAY-02",
-          day: 2,
-          title: "Munnar tea gardens & Eravikulam National Park"
-        },
-        {
-          id: "KERALA-DAY-03",
-          day: 3,
-          title: "Transfer to Alleppey, overnight houseboat stay"
-        },
-        {
-          id: "KERALA-DAY-04",
-          day: 4,
-          title: "Backwater cruise, transfer to Kochi, departure"
-        }
-      ],
-
-      originalPrice: 26999,
-      price: 22499,
-      currency: "INR",
-      priceUnit: "person"
-    }
-  ];
+  const getImageUrl = (image) => {
+    if (!image) return "";
+    const match = image.match(/\]\((.*?)\)$/);
+    return match ? match[1] : image;
+  };
 
   const holidayFilterOptions = {
     title: "Filter Packages",
@@ -455,7 +277,7 @@ function HolidaysAndPackages() {
 
           <div className="HolidaysHeadingDetails">
             <div className="HolidaysHAndPTag">
-              <h2>36 holiday packages found</h2>
+              <h2>{travelPackages.length} holiday packages found</h2>
               <p>Flights + Hotels + Sightseeing bundled</p>
             </div>
 
@@ -468,27 +290,27 @@ function HolidaysAndPackages() {
 
           <div>
             {
-              getTravelPackages.map((HolidaysDetails) => {
+              travelPackages.map((HolidaysDetails) => {
                 return (
-                  <div className="singleCardSection" key={HolidaysDetails.id}>
+                  <div className="singleCardSection" key={HolidaysDetails.packageId}>
 
                     <div className="ImageAndTextDetailsContent">
                       <div className="ImageAndContent">
                         <img
-                          src={HolidaysDetails.image}
-                          alt="BaliBeach"
+                          src={getImageUrl(HolidaysDetails.images?.[0])}
+                          alt={HolidaysDetails.title}
                           className="toursImages"
                         />
 
                         <div className="HolidaysTextsAndPointsDetails">
-                          <p className="HolidayBadgeDetails">{HolidaysDetails.badge}</p>
+                          <p className="HolidayBadgeDetails">{`${HolidaysDetails.duration?.nights ?? 0}N/${HolidaysDetails.duration?.days ?? 0}D · ${HolidaysDetails.packageType?.toUpperCase() ?? ""}`}</p>
                           <p className="HolidaysTitle">{HolidaysDetails.title}</p>
 
                           <div className="HolidaysPointsDetails">
                             <div className="HolidaysPicks">
-                              <p>📍 {HolidaysDetails.destination}</p>
-                              <p>👥 {HolidaysDetails.travelers}</p>
-                              <p>⭐ {HolidaysDetails.rating} ({HolidaysDetails.bookings} bookings)</p>
+                              <p>📍 {`${HolidaysDetails.destination?.city ?? ""}, ${HolidaysDetails.destination?.country ?? ""}`}</p>
+                              <p>👥 {HolidaysDetails.pricing?.twinSharing ? "Twin Sharing" : "Per Person"}</p>
+                              <p>⭐ {HolidaysDetails.rating?.average ?? 0} ({HolidaysDetails.rating?.totalReviews ?? 0} reviews)</p>
                             </div>
                             <div className="packageInclusions">
                               {HolidaysDetails.inclusions.map((include, index) => (
@@ -506,7 +328,7 @@ function HolidaysAndPackages() {
 
                         <div>
                           {HolidaysDetails.itinerary.map((HolidaysPoints) => (
-                            <div className="HolidayDayTitle" key={HolidaysPoints.id}>
+                            <div className="HolidayDayTitle" key={HolidaysPoints._id || `${HolidaysDetails.packageId}-${HolidaysPoints.day}`}>
                               <span>{HolidaysPoints.day}</span>
                               <p>{HolidaysPoints.title}</p>
                             </div>
@@ -518,9 +340,9 @@ function HolidaysAndPackages() {
 
                         <div className="DetailsButton">
                           <div className="DelTextPSpanTag">
-                            <del>{HolidaysDetails.originalPrice}</del>
+                            <del>{HolidaysDetails.pricing?.originalPrice?.toLocaleString("en-IN")}</del>
                             <div className="PTagAndSpanTAg">
-                              <p>₹{HolidaysDetails.price}</p>
+                              <p>₹{HolidaysDetails.pricing?.pricePerPerson?.toLocaleString("en-IN")}</p>
                               <span>/person</span>
                             </div>
                           </div>
