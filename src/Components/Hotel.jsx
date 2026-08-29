@@ -1,494 +1,1021 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import "../CSS_CODE/HotelCSS.css";
 import Navbar from "../Components/Navbar";
-import Hotel1 from "../assets/Hotel1.jpg";
-import Hotel2 from "../assets/Hotel2.avif";
-import Hotel3 from "../assets/Hotel3.jpeg";
-import Hotel4 from "../assets/Hotel4.webp";
-import Hotel5 from "../assets/Hotel5.jpg";
-import Hotel6 from "../assets/Hotel6.webp";
-import Footer from "../Components/Footer"
+import Footer from "../Components/Footer";
 import HotelVideo from "../assets/HotelVideo.mp4";
+import getHotelDetails from "../Custom-Hook/getHotelDetails";
 
 function Hotel() {
+  const { hotelData = [], loading, error } = getHotelDetails();
+  const [maxPrice, setMaxPrice] = useState(15000);
 
-  const hotelsDetails = [
-    {
-      id: 1,
-      name: "The Grand Palace",
-      location: "Civil Lines, Jaipur",
-      distance: "2.1 km from city center",
-      photos: 18,
-      image: Hotel1,
+  const [selectedFilters, setSelectedFilters] = useState({
+    starRating: [],
+    propertyType: [],
+    amenities: [],
+    guestRating: [],
+  });
 
-      score: 4.7,
-      label: "Excellent",
-      totalRatings: 2340,
-
-      amenities: [
-        "📶 Free WiFi",
-        "🏊 Pool",
-        "🍳 Breakfast Included",
-        "🅿️ Free Parking",
-        "❄️ AC Rooms",
-      ],
-
-      cancellation: "Free Cancellation before check-in",
-
-      original: 6499,
-      current: 4999,
-      taxes: 599,
-      taxLabel: "taxes & fees / night",
-      roomInfo: "1 Room × 1 Night",
-      buttonText: "Book Now",
-    },
-
-    {
-      id: 2,
-      name: "Ocean View Resort",
-      location: "Candolim Beach, Goa",
-      distance: "300 m from beach",
-      photos: 24,
-      image: Hotel2,
-
-      score: 4.5,
-      label: "Very Good",
-      totalRatings: 1890,
-
-      amenities: [
-        "🏖️ Beach Access",
-        "🏊 Infinity Pool",
-        "🍽️ Multi-cuisine Restaurant",
-        "🧘 Spa",
-        "🚗 Airport Transfer",
-      ],
-
-      cancellation: "Pay at Hotel available",
-
-      original: 7200,
-      current: 5499,
-      taxes: 660,
-      taxLabel: "taxes & fees / night",
-      roomInfo: "1 Room × 1 Night",
-      buttonText: "Book Now",
-    },
-
-    {
-      id: 3,
-      name: "Mountain Retreat",
-      location: "Mall Road, Shimla",
-      distance: "800 m from Ridge",
-      photos: 15,
-      image: Hotel3,
-
-      score: 4.6,
-      label: "Excellent",
-      totalRatings: 980,
-
-      amenities: [
-        "🔥 Bonfire Available",
-        "🏔️ Mountain View",
-        "🍳 Breakfast Included",
-        "📶 Free WiFi",
-        "🚗 Free Parking",
-      ],
-
-      cancellation: "Free Cancellation before check-in",
-
-      original: 4100,
-      current: 3299,
-      taxes: 396,
-      taxLabel: "taxes & fees / night",
-      roomInfo: "1 Room × 1 Night",
-      buttonText: "Book Now",
-    },
-
-    {
-      id: 4,
-      name: "Lakeside Suites",
-      location: "Lake Pichola, Udaipur",
-      distance: "Lake-facing rooms",
-      photos: 30,
-      image: Hotel4,
-
-      score: 4.8,
-      label: "Excellent",
-      totalRatings: 3120,
-
-      amenities: [
-        "🌊 Lake View",
-        "🍽️ Rooftop Restaurant",
-        "🏊 Pool",
-        "🧘 Spa & Wellness",
-        "🚗 Free Parking",
-      ],
-
-      cancellation: "Couple Friendly · Free Cancellation",
-
-      original: 8999,
-      current: 6999,
-      taxes: 840,
-      taxLabel: "taxes & fees / night",
-      roomInfo: "1 Room × 1 Night",
-      buttonText: "Book Now",
-    },
-
-    {
-      id: 5,
-      name: "Royal Heritage Hotel",
-      location: "MI Road, Jaipur",
-      distance: "1.5 km from Hawa Mahal",
-      photos: 21,
-      image: Hotel5,
-
-      score: 4.4,
-      label: "Very Good",
-      totalRatings: 1650,
-
-      amenities: [
-        "🏛️ Heritage Property",
-        "🍳 Breakfast Included",
-        "📶 Free WiFi",
-        "🏊 Swimming Pool",
-        "🅿️ Free Parking",
-      ],
-
-      cancellation: "Free Cancellation before check-in",
-
-      original: 5800,
-      current: 4299,
-      taxes: 516,
-      taxLabel: "taxes & fees / night",
-      roomInfo: "1 Room × 1 Night",
-      buttonText: "Book Now",
-    },
-
-    {
-      id: 6,
-      name: "Beachfront Paradise",
-      location: "Baga Beach, Goa",
-      distance: "100 m from beach",
-      photos: 28,
-      image: Hotel6,
-
-      score: 4.7,
-      label: "Excellent",
-      totalRatings: 2780,
-
-      amenities: [
-        "🏖️ Private Beach Access",
-        "🏊 Infinity Pool",
-        "🍹 Poolside Bar",
-        "🧘 Spa & Wellness",
-        "🚗 Free Parking",
-      ],
-
-      cancellation: "Free Cancellation before check-in",
-
-      original: 9500,
-      current: 7499,
-      taxes: 900,
-      taxLabel: "taxes & fees / night",
-      roomInfo: "1 Room × 1 Night",
-      buttonText: "Book Now",
-    },
-  ];
+  const [sortBy, setSortBy] = useState("popularity");
 
   const filters = [
     {
       category: "starRating",
       title: "STAR RATING",
       options: [
-        { id: 1, label: "Five Star", stars: "⭐⭐⭐⭐⭐", count: 12 },
-        { id: 2, label: "Four Star", stars: "⭐⭐⭐⭐", count: 28 },
-        { id: 3, label: "Three Star", stars: "⭐⭐⭐", count: 41 },
-        { id: 4, label: "Two Star", stars: "⭐⭐", count: 9 },
+        {
+          id: 1,
+          label: "Five Star",
+          value: 5,
+          stars: "⭐⭐⭐⭐⭐",
+        },
+        {
+          id: 2,
+          label: "Four Star",
+          value: 4,
+          stars: "⭐⭐⭐⭐",
+        },
+        {
+          id: 3,
+          label: "Three Star",
+          value: 3,
+          stars: "⭐⭐⭐",
+        },
+        {
+          id: 4,
+          label: "Two Star",
+          value: 2,
+          stars: "⭐⭐",
+        },
       ],
     },
+
     {
       category: "propertyType",
       title: "PROPERTY TYPE",
       options: [
-        { id: 1, label: "Hotel", count: 68 },
-        { id: 2, label: "Resort", count: 22 },
-        { id: 3, label: "Guest House", count: 15 },
-        { id: 4, label: "Apartment", count: 9 },
+        {
+          id: 1,
+          label: "Luxury Hotel",
+          value: "Luxury Hotel",
+        },
+        {
+          id: 2,
+          label: "Hotel",
+          value: "Hotel",
+        },
+        {
+          id: 3,
+          label: "Resort",
+          value: "Resort",
+        },
+        {
+          id: 4,
+          label: "Apartment",
+          value: "Apartment",
+        },
+        {
+          id: 5,
+          label: "Guest House",
+          value: "Guest House",
+        },
       ],
     },
+
     {
       category: "amenities",
       title: "AMENITIES",
       options: [
-        { id: 1, label: "Free WiFi" },
-        { id: 2, label: "Swimming Pool" },
-        { id: 3, label: "Free Breakfast" },
-        { id: 4, label: "Free Cancellation" },
-        { id: 5, label: "Parking Available" },
-        { id: 6, label: "Spa & Wellness" },
+        {
+          id: 1,
+          label: "Free WiFi",
+          value: "Free WiFi",
+        },
+        {
+          id: 2,
+          label: "Swimming Pool",
+          value: "Swimming Pool",
+        },
+        {
+          id: 3,
+          label: "Free Breakfast",
+          value: "Free Breakfast",
+        },
+        {
+          id: 4,
+          label: "Free Parking",
+          value: "Free Parking",
+        },
+        {
+          id: 5,
+          label: "Spa & Wellness",
+          value: "Spa & Wellness",
+        },
+        {
+          id: 6,
+          label: "Air Conditioning",
+          value: "Air Conditioning",
+        },
       ],
     },
+
     {
       category: "guestRating",
       title: "GUEST RATING",
       options: [
-        { id: 1, label: "4.5+ Excellent" },
-        { id: 2, label: "4.0+ Very Good" },
-        { id: 3, label: "3.5+ Good" },
+        {
+          id: 1,
+          label: "4.5+ Excellent",
+          value: 4.5,
+        },
+        {
+          id: 2,
+          label: "4.0+ Very Good",
+          value: 4.0,
+        },
+        {
+          id: 3,
+          label: "3.5+ Good",
+          value: 3.5,
+        },
       ],
     },
   ];
 
+  const normalizedHotels = useMemo(() => {
+    return hotelData.map((hotel) => {
+      const location = hotel.location || {};
+      const pricing = hotel.pricing || {};
+      const rating = hotel.rating || {};
+      const policies = hotel.policies || {};
+
+      const images = Array.isArray(hotel.images)
+        ? hotel.images
+        : [];
+
+      const amenities = Array.isArray(hotel.amenities)
+        ? hotel.amenities
+        : [];
+
+      const roomTypes = Array.isArray(hotel.roomTypes)
+        ? hotel.roomTypes
+        : [];
+
+      const tags = Array.isArray(hotel.tags)
+        ? hotel.tags
+        : [];
+
+      const basePrice = Number(pricing.basePrice || 0);
+      const originalPrice = Number(
+        pricing.originalPrice || basePrice
+      );
+
+      const taxesPercent = Number(
+        pricing.taxesPercent || 0
+      );
+
+      const taxes = Math.round(
+        (basePrice * taxesPercent) / 100
+      );
+
+      const averageRating = Number(
+        rating.average || 0
+      );
+
+      const totalReviews = Number(
+        rating.totalReviews || 0
+      );
+
+      const firstRoom = roomTypes[0] || {};
+
+      return {
+        id: hotel._id || hotel.hotelId,
+
+        hotelId: hotel.hotelId || "",
+
+        name: hotel.name || "Hotel",
+
+        brand: hotel.brand || "",
+
+        starRating: Number(
+          hotel.starRating || 0
+        ),
+
+        propertyType:
+          hotel.propertyType || "Hotel",
+
+        // LOCATION
+        city: location.city || "",
+
+        state: location.state || "",
+
+        country: location.country || "",
+
+        area: location.area || "",
+
+        locationText: [
+          location.area,
+          location.city,
+        ]
+          .filter(Boolean)
+          .join(", "),
+
+        distance:
+          location.distanceFromLandmark ||
+          "Distance unavailable",
+
+        // PRICE
+        basePrice,
+
+        originalPrice,
+
+        taxesPercent,
+
+        taxes,
+
+        currency:
+          pricing.currency || "INR",
+
+        breakfastIncluded:
+          Boolean(pricing.breakfastIncluded),
+
+        // RATING
+        averageRating,
+
+        totalReviews,
+
+        ratingLabel:
+          averageRating >= 4.5
+            ? "Excellent"
+            : averageRating >= 4
+              ? "Very Good"
+              : averageRating >= 3.5
+                ? "Good"
+                : "Average",
+
+        // AMENITIES
+        amenities,
+
+        // IMAGES
+        images,
+
+        mainImage:
+          images[0] ||
+          "https://via.placeholder.com/1000x650?text=Hotel",
+
+        photoCount: images.length,
+
+        // ROOM
+        roomTypes,
+
+        firstRoomName:
+          firstRoom.name ||
+          "Room",
+
+        firstRoomBed:
+          firstRoom.bedType ||
+          "Bed details unavailable",
+
+        maxGuests:
+          firstRoom.maxGuests || 0,
+
+        // POLICY
+        cancellation:
+          policies.cancellation ||
+          "Cancellation policy unavailable",
+
+        checkIn:
+          policies.checkIn || "2:00 PM",
+
+        checkOut:
+          policies.checkOut || "11:00 AM",
+
+        petsAllowed:
+          Boolean(policies.petsAllowed),
+
+        // TAGS
+        tags,
+
+        description:
+          hotel.description || "",
+      };
+    });
+  }, [hotelData]);
+
+  // --------------------------------------------------
+  // FILTER HANDLER
+  // --------------------------------------------------
+
+  const handleFilterChange = (
+    category,
+    value
+  ) => {
+    setSelectedFilters((previous) => {
+      const current =
+        previous[category] || [];
+
+      const exists =
+        current.includes(value);
+
+      return {
+        ...previous,
+
+        [category]: exists
+          ? current.filter(
+            (item) => item !== value
+          )
+          : [...current, value],
+      };
+    });
+  };
+
+  // --------------------------------------------------
+  // FILTER + SORT HOTELS
+  // --------------------------------------------------
+
+  const filteredHotels = useMemo(() => {
+    let result = [...normalizedHotels];
+
+    // PRICE
+    result = result.filter(
+      (hotel) =>
+        hotel.basePrice <= maxPrice
+    );
+
+    // STAR RATING
+    if (
+      selectedFilters.starRating.length > 0
+    ) {
+      result = result.filter((hotel) =>
+        selectedFilters.starRating.includes(
+          hotel.starRating
+        )
+      );
+    }
+
+    // PROPERTY TYPE
+    if (
+      selectedFilters.propertyType.length > 0
+    ) {
+      result = result.filter((hotel) =>
+        selectedFilters.propertyType.some(
+          (type) =>
+            hotel.propertyType
+              .toLowerCase()
+              .includes(type.toLowerCase())
+        )
+      );
+    }
+
+    // AMENITIES
+    if (
+      selectedFilters.amenities.length > 0
+    ) {
+      result = result.filter((hotel) =>
+        selectedFilters.amenities.every(
+          (selectedAmenity) =>
+            hotel.amenities.some(
+              (amenity) =>
+                amenity.toLowerCase() ===
+                selectedAmenity.toLowerCase()
+            )
+        )
+      );
+    }
+
+    // GUEST RATING
+    if (
+      selectedFilters.guestRating.length > 0
+    ) {
+      result = result.filter((hotel) =>
+        selectedFilters.guestRating.some(
+          (rating) =>
+            hotel.averageRating >= rating
+        )
+      );
+    }
+
+    // SORT
+    switch (sortBy) {
+      case "priceLow":
+        result.sort(
+          (a, b) =>
+            a.basePrice - b.basePrice
+        );
+        break;
+
+      case "priceHigh":
+        result.sort(
+          (a, b) =>
+            b.basePrice - a.basePrice
+        );
+        break;
+
+      case "rating":
+        result.sort(
+          (a, b) =>
+            b.averageRating -
+            a.averageRating
+        );
+        break;
+
+      case "popularity":
+      default:
+        result.sort(
+          (a, b) =>
+            b.totalReviews -
+            a.totalReviews
+        );
+        break;
+    }
+
+    return result;
+  }, [
+    normalizedHotels,
+    maxPrice,
+    selectedFilters,
+    sortBy,
+  ]);
+
+  // --------------------------------------------------
+  // CLEAR FILTERS
+  // --------------------------------------------------
+
+  const clearFilters = () => {
+    setMaxPrice(15000);
+
+    setSelectedFilters({
+      starRating: [],
+      propertyType: [],
+      amenities: [],
+      guestRating: [],
+    });
+  };
+
+  // --------------------------------------------------
+  // CITY
+  // --------------------------------------------------
+
+  const cityName =
+    filteredHotels.length > 0
+      ? filteredHotels[0].city
+      : "India";
+
+  // --------------------------------------------------
+  // UI
+  // --------------------------------------------------
+
   return (
-    <div>
+    <div className="HotelPage">
 
       <Navbar />
 
-      <div>
+      {/* =========================================
+          HERO VIDEO
+      ========================================= */}
 
-        {/* HOTEL VIDEO */}
+      <section className="VideoHero">
 
-        <div className="VideoHero">
+        <video
+          className="HotelVideo"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+        >
+          <source
+            src={HotelVideo}
+            type="video/mp4"
+          />
 
-          <video
-            className="HotelVideo"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source
-              src={HotelVideo}
-              type="video/mp4"
-            />
-          </video>
+          Your browser does not support
+          the video tag.
+        </video>
 
-          <div className="VideoTextDiv">
+        <div className="VideoTextDiv">
 
-            <h1>
-              Your Next Stay Starts Here
-            </h1>
+          <h1>
+            Your Next Stay Starts Here
+          </h1>
 
-            <p>
-              Find hotels, resorts & guest houses in 5,000+ cities.
-            </p>
-
-          </div>
+          <p>
+            Find hotels, resorts & guest
+            houses in 5,000+ cities.
+          </p>
 
         </div>
 
+      </section>
 
-        {/* HOTEL LIST SECTION */}
+      {/* =========================================
+          MAIN HOTEL SECTION
+      ========================================= */}
 
-        <div className="LeftAndRightSideHotelSide">
+      <section className="LeftAndRightSideHotelSide">
 
-          {/* LEFT SIDE FILTER */}
+        {/* =====================================
+            LEFT FILTER SIDEBAR
+        ===================================== */}
 
-          <div className="FilterLeftSide">
+        <aside className="FilterLeftSide">
 
-            <h4>Filter Results</h4>
+          <div className="FilterHeader">
 
-            <hr />
+            <h4>
+              Filter Results
+            </h4>
 
-            <div className="priceRangeDiv">
-              <div className="priceRangeHeader">
-                <label htmlFor="priceRange" className="priceRangeLabel">
-                  Price per night
-                </label>
+            <button
+              type="button"
+              onClick={clearFilters}
+              className="ClearFilterButton"
+            >
+              Clear All
+            </button>
 
-                <span className="priceRangeValue">₹Price</span>
-              </div>
+          </div>
 
-              <input
-                id="priceRange"
-                type="range"
-                className="priceRangeTag"
-                min="1000"
-                max="15000"
-                step="1000"
-                // value={price}
-                // onChange={(e) => setPrice(Number(e.target.value))}
-                aria-label="Maximum price per night"
-              />
+          <hr />
 
-              <div className="priceRangeLimits">
-                <span>₹1,000</span>
-                <span>₹15,000+</span>
-              </div>
+          {/* PRICE FILTER */}
+
+          <div className="priceRangeDiv">
+
+            <div className="priceRangeHeader">
+
+              <label
+                htmlFor="priceRange"
+                className="priceRangeLabel"
+              >
+                Price per night
+              </label>
+
+              <span className="priceRangeValue">
+                ₹{maxPrice.toLocaleString()}
+              </span>
+
             </div>
 
-            <div className="filterContainer">
-              {filters.map((filter) => (
-                <div className="filterSection" key={filter.category}>
-                  <h5>{filter.title}</h5>
+            <input
+              id="priceRange"
+              type="range"
+              className="priceRangeTag"
+              min="1000"
+              max="15000"
+              step="500"
+              value={maxPrice}
+              onChange={(event) =>
+                setMaxPrice(
+                  Number(event.target.value)
+                )
+              }
+              aria-label="Maximum price per night"
+            />
 
-                  {filter.options.map((option) => (
-                    <label key={option.id} className="filterOption">
+            <div className="priceRangeLimits">
+
+              <span>
+                ₹1,000
+              </span>
+
+              <span>
+                ₹15,000+
+              </span>
+
+            </div>
+
+          </div>
+
+          {/* OTHER FILTERS */}
+
+          <div className="filterContainer">
+
+            {filters.map((filter) => (
+
+              <div
+                className="filterSection"
+                key={filter.category}
+              >
+
+                <h5>
+                  {filter.title}
+                </h5>
+
+                {filter.options.map(
+                  (option) => (
+
+                    <label
+                      key={option.id}
+                      className="filterOption"
+                    >
+
                       <input
                         type="checkbox"
                         className="starCheckBoxTag"
+                        checked={selectedFilters[
+                          filter.category
+                        ].includes(
+                          option.value
+                        )}
+                        onChange={() =>
+                          handleFilterChange(
+                            filter.category,
+                            option.value
+                          )
+                        }
                       />
 
                       <span className="spanStarDetails">
-                        <span className="starSpan">
-                          {option.stars}
-                        </span>
+
+                        {option.stars && (
+                          <span className="starSpan">
+                            {option.stars}
+                          </span>
+                        )}
 
                         <span className="starLabel">
                           {option.label}
                         </span>
 
-                        <span className="starTextCount">
-                          {option.count && ` (${option.count})`}
-                        </span>
                       </span>
+
                     </label>
-                  ))}
-                </div>
-              ))}
-            </div>
+
+                  )
+                )}
+
+              </div>
+
+            ))}
+
           </div>
 
+        </aside>
 
-          {/* RIGHT SIDE HOTEL DETAILS */}
+        {/* =====================================
+            RIGHT HOTEL CONTENT
+        ===================================== */}
 
-          <div>
+        <main className="HotelRightSide">
 
-            {/* HOTEL HEADER */}
+          {/* HEADER */}
 
-            <div className="TagsHeaderCodeDiv">
+          <div className="TagsHeaderCodeDiv">
 
-              <div className="HotelCitiesDate">
+            <div className="HotelCitiesDate">
 
-                <h4>142 hotels found in Hyderabad</h4>
+              <h4>
+                {filteredHotels.length}{" "}
+                hotels found in {cityName}
+              </h4>
 
-                <p>21 Aug - 22 Aug · 1 Room, 2 Adults</p>
-
-              </div>
-
-
-              <div className="TagsForPriceLayouts">
-
-                <p className="TagsForPriceLayout">Popularity</p>
-                <p className="TagsForPriceLayout">Price: Low to High</p>
-                <p className="TagsForPriceLayout">Price: High to Low</p>
-                <p className="TagsForPriceLayout">Guest Rating</p>
-
-              </div>
+              <p>
+                21 Aug - 22 Aug · 1 Room,
+                2 Adults
+              </p>
 
             </div>
 
-            {/* HOTEL CARDS */}
+            {/* SORT */}
 
-            <div className="HotelCardsContainer">
+            <div className="TagsForPriceLayouts">
 
-              {hotelsDetails.map((Details) => (
+              <button
+                type="button"
+                className={`TagsForPriceLayout ${sortBy === "popularity"
+                    ? "active"
+                    : ""
+                  }`}
+                onClick={() =>
+                  setSortBy("popularity")
+                }
+              >
+                Popularity
+              </button>
 
-                <div
-                  className="HotelCard"
-                  key={Details.id}
+              <button
+                type="button"
+                className={`TagsForPriceLayout ${sortBy === "priceLow"
+                    ? "active"
+                    : ""
+                  }`}
+                onClick={() =>
+                  setSortBy("priceLow")
+                }
+              >
+                Price: Low to High
+              </button>
+
+              <button
+                type="button"
+                className={`TagsForPriceLayout ${sortBy === "priceHigh"
+                    ? "active"
+                    : ""
+                  }`}
+                onClick={() =>
+                  setSortBy("priceHigh")
+                }
+              >
+                Price: High to Low
+              </button>
+
+              <button
+                type="button"
+                className={`TagsForPriceLayout ${sortBy === "rating"
+                    ? "active"
+                    : ""
+                  }`}
+                onClick={() =>
+                  setSortBy("rating")
+                }
+              >
+                Guest Rating
+              </button>
+
+            </div>
+
+          </div>
+
+          {/* LOADING */}
+
+          {loading && (
+            <div className="HotelLoading">
+              Loading hotels...
+            </div>
+          )}
+
+          {/* ERROR */}
+
+          {error && (
+            <div className="HotelError">
+              {error}
+            </div>
+          )}
+
+          {/* NO DATA */}
+
+          {!loading &&
+            !error &&
+            filteredHotels.length === 0 && (
+
+              <div className="NoHotelsFound">
+
+                <h3>
+                  No hotels found
+                </h3>
+
+                <p>
+                  Try changing your filters
+                  or increasing the price range.
+                </p>
+
+                <button
+                  type="button"
+                  onClick={clearFilters}
                 >
+                  Clear Filters
+                </button>
 
-                  <div className="ImageAndContent">
-                    {/* HOTEL IMAGE */}
-                    <div className="HotelImageContainer">
+              </div>
 
-                      <img
-                        src={Details.image}
-                        alt={Details.name}
-                        className="HotelImages"
-                      />
+            )}
 
-                      <div className="HotelPhotos">+{Details.photos} Photos </div>
+          {/* HOTEL CARDS */}
 
-                    </div>
+          <div className="HotelCardsContainer">
 
-                    {/* HOTEL INFORMATION */}
+            {!loading &&
+              !error &&
+              filteredHotels.map(
+                (hotel) => (
 
-                    <div className="HotelDetails">
+                  <article
+                    className="HotelCard"
+                    key={hotel.id}
+                  >
 
-                      <h3 className="HotelName">{Details.name}</h3>
+                    {/* =================================
+                        IMAGE + DETAILS
+                    ================================= */}
 
-                      {/* LOCATION */}
+                    <div className="ImageAndContent">
 
-                      <div className="HotelLocation">
+                      {/* IMAGE */}
 
-                        <span>📍</span>
-                        <p>{Details.location}</p>
-                        <span>·</span>
-                        <p>{Details.distance}</p>
+                      <div className="HotelImageContainer">
 
-                      </div>
+                        <img
+                          src={hotel.mainImage}
+                          alt={hotel.name}
+                          className="HotelImages"
+                          loading="lazy"
+                        />
 
-
-                      {/* RATING */}
-
-                      <div className="HotelRating">
-
-                        <span className="HotelRatingScore">{Details.score}★</span>
-                        <div>
-                          <span>{Details.label}</span>
-                          <span>·</span>
-                          <span>{Details.totalRatings.toLocaleString()} ratings</span>
+                        <div className="HotelPhotos">
+                          +{hotel.photoCount} Photos
                         </div>
 
                       </div>
 
+                      {/* DETAILS */}
 
-                      {/* AMENITIES */}
+                      <div className="HotelDetails">
 
-                      <div className="HotelAmenities">
+                        <h3 className="HotelName">
+                          {hotel.name}
+                        </h3>
 
-                        {Details.amenities.map(
-                          (amenity, index) => (
-                            <span
-                              key={index}
-                              className="HotelAmenity"
-                            >
-                              {amenity}
-                            </span>
-                          )
+                        {/* STAR RATING */}
+
+                        {hotel.starRating > 0 && (
+
+                          <div className="HotelStars">
+                            {"⭐".repeat(
+                              hotel.starRating
+                            )}
+                          </div>
+
                         )}
+
+                        {/* PROPERTY TYPE */}
+
+                        <p className="HotelPropertyType">
+                          {hotel.propertyType}
+                        </p>
+
+                        {/* LOCATION */}
+
+                        <div className="HotelLocation">
+
+                          <span>
+                            📍
+                          </span>
+
+                          <p>
+                            {hotel.locationText}
+                          </p>
+
+                          <span>
+                            ·
+                          </span>
+
+                          <p>
+                            {hotel.distance}
+                          </p>
+
+                        </div>
+
+                        {/* RATING */}
+
+                        <div className="HotelRating">
+
+                          <span className="HotelRatingScore">
+                            {hotel.averageRating.toFixed(
+                              1
+                            )}
+                            ★
+                          </span>
+
+                          <div>
+
+                            <span>
+                              {hotel.ratingLabel}
+                            </span>
+
+                            <span>
+                              {" · "}
+                            </span>
+
+                            <span>
+                              {hotel.totalReviews.toLocaleString()}{" "}
+                              ratings
+                            </span>
+
+                          </div>
+
+                        </div>
+
+                        {/* AMENITIES */}
+
+                        <div className="HotelAmenities">
+
+                          {hotel.amenities
+                            .slice(0, 5)
+                            .map(
+                              (amenity) => (
+
+                                <span
+                                  key={amenity}
+                                  className="HotelAmenity"
+                                >
+                                  {amenity}
+                                </span>
+
+                              )
+                            )}
+
+                        </div>
+
+                        {/* BREAKFAST */}
+
+                        {hotel.breakfastIncluded && (
+
+                          <p className="HotelBreakfast">
+                            🍳 Breakfast included
+                          </p>
+
+                        )}
+
+                        {/* CANCELLATION */}
+
+                        <p className="HotelCancellation">
+                          ✔ {hotel.cancellation}
+                        </p>
 
                       </div>
 
-                      {/* CANCELLATION */}
-                      <p className="HotelCancellation">✔ {Details.cancellation}</p>
+                    </div>
+
+                    {/* =================================
+                        PRICE SECTION
+                    ================================= */}
+
+                    <div className="HotelPriceSection">
+
+                      {/* ORIGINAL PRICE */}
+
+                      {hotel.originalPrice >
+                        hotel.basePrice && (
+
+                          <p className="HotelOriginalPrice">
+                            ₹
+                            {hotel.originalPrice.toLocaleString()}
+                          </p>
+
+                        )}
+
+                      {/* CURRENT PRICE */}
+
+                      <h2 className="HotelCurrentPrice">
+                        ₹
+                        {hotel.basePrice.toLocaleString()}
+                      </h2>
+
+                      {/* TAX */}
+
+                      <p className="HotelTaxes">
+                        + ₹
+                        {hotel.taxes.toLocaleString()}{" "}
+                        taxes & fees
+                      </p>
+
+                      {/* ROOM */}
+
+                      <p className="HotelRoomInfo">
+                        {hotel.firstRoomName}
+                        {" · "}
+                        {hotel.firstRoomBed}
+                      </p>
+
+                      {/* GUEST */}
+
+                      {hotel.maxGuests > 0 && (
+
+                        <p className="HotelGuestInfo">
+                          👤 Up to{" "}
+                          {hotel.maxGuests} guests
+                        </p>
+
+                      )}
+
+                      {/* BOOK */}
+
+                      <button
+                        type="button"
+                        className="HotelBookButton"
+                      >
+                        Book Now
+                      </button>
 
                     </div>
-                  </div>
 
+                  </article>
 
-                  {/* PRICE SECTION */}
-
-                  <div className="HotelPriceSection">
-
-                    <p className="HotelOriginalPrice"> ₹{Details.original.toLocaleString()}</p>
-                    <h2 className="HotelCurrentPrice"> ₹{Details.current.toLocaleString()} </h2>
-                    <p className="HotelTaxes">
-                      + ₹{Details.taxes.toLocaleString()}{" "}
-                      {Details.taxLabel}
-                    </p>
-                    <p className="HotelRoomInfo">{Details.roomInfo}</p>
-                    <button className="HotelBookButton">{Details.buttonText}</button>
-
-                  </div>
-
-                </div>
-
-              ))}
-
-            </div>
+                )
+              )}
 
           </div>
 
-        </div>
+        </main>
 
-      </div>
+      </section>
 
-      <Footer/>
+      <Footer />
 
     </div>
   );
 }
 
 export default Hotel;
+

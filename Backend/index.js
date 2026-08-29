@@ -23,15 +23,13 @@ dataBase.Dbconnect();
 
 const AuthRoute = require("./Routes/AuthRoutes")
 const villaJSON = require("./Routes/villaJSONRoute")
-const villaDataGet = require("./Routes/villaGetDetails")
 const holidaysJSON = require("./Routes/holidaysPackages")
-const getHolidaysJSON = require("./Routes/getHolidaysPackages")
+const hotelJSONDetails = require("./Routes/HotelRoute")
 
 app.use("/api/auth", AuthRoute)
 app.use("/api/villaJSON", villaJSON)
-app.use("/api/getVillaJSON", villaDataGet)
 app.use("/api/holidaysJSON", holidaysJSON)
-app.use("/api/getHolidays", getHolidaysJSON)
+app.use("/api/hotelJSON", hotelJSONDetails)
 
 // Root Route
 app.get("/", (req, res) => {

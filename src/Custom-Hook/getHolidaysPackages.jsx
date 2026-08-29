@@ -10,7 +10,7 @@ const getHolidays = () => {
     const getHolidaysData = async () => {
       try{
 
-        const Response = await axios.get(`http://localhost:4000/api/getHolidays/getVillaDetails`)
+        const Response = await axios.get(`http://localhost:4000/api/holidaysJSON/getHolidaysDetails`)
 
         setHolidaysData(Response.data.data)
         console.log(holidaysData, "holidaysData")

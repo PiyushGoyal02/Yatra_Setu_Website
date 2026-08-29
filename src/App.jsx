@@ -13,13 +13,16 @@ import VillaHomeStay from "./Components/VillaHomeStay";
 
 import VillaJSONHook from "./Custom-Hook/VillaJSON";
 import HolidaysJSONComp from "./Custom-Hook/HolidaysJSON";
+import HotelDetails from "./Custom-Hook/HotelJSON"
 
 function App() {
   return (
     <>
       {/* Save JSON data to backend */}
+
       {/* <VillaJSONHook /> */}
       {/* <HolidaysJSONComp /> */}
+      {/* <HotelDetails/> */}
 
       <Routes>
         <Route path="/" element={<Login />} />

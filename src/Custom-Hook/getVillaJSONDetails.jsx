@@ -8,7 +8,7 @@ const VillaGetJSONDetails = () => {
     const villaDataGet = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/api/getVillaJSON/getVillaDetails`
+          `http://localhost:4000/api/villaJSON/getVillaDetails`
         );
 
         setVillaDetails(response.data.data);

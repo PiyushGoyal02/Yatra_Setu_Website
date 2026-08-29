@@ -1,0 +1,574 @@
+{
+  "_meta": {
+    "description": "Sample hotel dataset for YatraSetu — modeled on fields used by MakeMyTrip, Agoda, and Booking.com.",
+    "note": "Prices are realistic per-night estimates as of 2026. Image URLs use Picsum placeholder service (stable, always loads) — swap with real photos via the Unsplash API (unsplash.com/developers) or a live hotel API (RapidAPI/Booking.com) before going live.",
+    "currency": "INR",
+    "total_records": 30
+  },
+  "hotels": [
+    {
+      "id": "H001",
+      "name": "The Grand Palace Jaipur",
+      "brand": "Independent",
+      "starRating": 5,
+      "propertyType": "Luxury Hotel",
+      "location": { "city": "Jaipur", "state": "Rajasthan", "country": "India", "area": "Civil Lines", "latitude": 26.9124, "longitude": 75.7873, "distanceFromLandmark": "2.1 km from City Palace" },
+      "pricing": { "basePrice": 4999, "originalPrice": 6499, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.7, "totalReviews": 2340, "cleanliness": 4.8, "service": 4.7, "location": 4.6, "valueForMoney": 4.5 },
+      "roomTypes": [
+        { "name": "Deluxe Room", "price": 4999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Executive Suite", "price": 7999, "maxGuests": 3, "bedType": "King + Sofa" }
+      ],
+      "amenities": ["Free WiFi", "Swimming Pool", "Free Breakfast", "Free Parking", "Spa & Wellness", "Air Conditioning", "24-Hour Front Desk"],
+      "images": ["https://picsum.photos/seed/hotel1a/1000/650", "https://picsum.photos/seed/hotel1b/1000/650", "https://picsum.photos/seed/hotel1c/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 24 hrs before check-in", "petsAllowed": false },
+      "tags": ["Free Cancellation", "Pool", "Top Rated"],
+      "description": "A heritage-inspired luxury hotel in the heart of Jaipur, blending Rajputana architecture with modern comforts."
+    },
+    {
+      "id": "H002",
+      "name": "Ocean View Resort Goa",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Beach Resort",
+      "location": { "city": "Candolim", "state": "Goa", "country": "India", "area": "North Goa", "latitude": 15.5185, "longitude": 73.7629, "distanceFromLandmark": "300 m from Candolim Beach" },
+      "pricing": { "basePrice": 5499, "originalPrice": 7200, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.5, "totalReviews": 1890, "cleanliness": 4.6, "service": 4.5, "location": 4.9, "valueForMoney": 4.3 },
+      "roomTypes": [
+        { "name": "Sea View Room", "price": 5499, "maxGuests": 2, "bedType": "Queen" },
+        { "name": "Beachfront Villa Suite", "price": 9999, "maxGuests": 4, "bedType": "2 Queen" }
+      ],
+      "amenities": ["Beach Access", "Infinity Pool", "Free WiFi", "Multi-cuisine Restaurant", "Spa", "Airport Transfer", "Bar"],
+      "images": ["https://picsum.photos/seed/hotel2a/1000/650", "https://picsum.photos/seed/hotel2b/1000/650", "https://picsum.photos/seed/hotel2c/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "11:00 AM", "cancellation": "Pay at hotel available", "petsAllowed": false },
+      "tags": ["Beachfront", "Pool", "Family Friendly"],
+      "description": "Beachfront resort steps from Candolim Beach with an infinity pool overlooking the Arabian Sea."
+    },
+    {
+      "id": "H003",
+      "name": "Mountain Retreat Shimla",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Hill Resort",
+      "location": { "city": "Shimla", "state": "Himachal Pradesh", "country": "India", "area": "Mall Road", "latitude": 31.1048, "longitude": 77.1734, "distanceFromLandmark": "800 m from The Ridge" },
+      "pricing": { "basePrice": 3299, "originalPrice": 4100, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.6, "totalReviews": 980, "cleanliness": 4.7, "service": 4.6, "location": 4.8, "valueForMoney": 4.6 },
+      "roomTypes": [
+        { "name": "Mountain View Room", "price": 3299, "maxGuests": 2, "bedType": "Queen" },
+        { "name": "Family Room", "price": 5299, "maxGuests": 4, "bedType": "2 Twin + Queen" }
+      ],
+      "amenities": ["Bonfire Area", "Mountain View", "Free Breakfast", "Free WiFi", "Room Heater", "Free Parking"],
+      "images": ["https://picsum.photos/seed/hotel3a/1000/650", "https://picsum.photos/seed/hotel3b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 24 hrs before check-in", "petsAllowed": true },
+      "tags": ["Mountain View", "Budget Friendly"],
+      "description": "Cozy hill retreat with panoramic Himalayan views, walking distance from Shimla's Mall Road."
+    },
+    {
+      "id": "H004",
+      "name": "Lakeside Suites Udaipur",
+      "brand": "Independent",
+      "starRating": 5,
+      "propertyType": "Luxury Hotel",
+      "location": { "city": "Udaipur", "state": "Rajasthan", "country": "India", "area": "Lake Pichola", "latitude": 24.5711, "longitude": 73.6811, "distanceFromLandmark": "On the banks of Lake Pichola" },
+      "pricing": { "basePrice": 6999, "originalPrice": 8999, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.8, "totalReviews": 3120, "cleanliness": 4.9, "service": 4.8, "location": 5.0, "valueForMoney": 4.5 },
+      "roomTypes": [
+        { "name": "Lake View Room", "price": 6999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Royal Suite", "price": 12999, "maxGuests": 3, "bedType": "King + Sofa" }
+      ],
+      "amenities": ["Lake View", "Rooftop Restaurant", "Swimming Pool", "Spa & Wellness", "Free Parking", "Free WiFi", "Butler Service"],
+      "images": ["https://picsum.photos/seed/hotel4a/1000/650", "https://picsum.photos/seed/hotel4b/1000/650", "https://picsum.photos/seed/hotel4c/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "12:00 PM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["Lake View", "Luxury", "Top Rated"],
+      "description": "Elegant lakeside hotel with rooftop views of the City Palace and Lake Pichola."
+    },
+    {
+      "id": "H005",
+      "name": "Marina Bay Hotel Dubai",
+      "brand": "Marina Collection",
+      "starRating": 5,
+      "propertyType": "Luxury Hotel",
+      "location": { "city": "Dubai", "state": "Dubai", "country": "UAE", "area": "Dubai Marina", "latitude": 25.0805, "longitude": 55.1403, "distanceFromLandmark": "500 m from Dubai Marina Mall" },
+      "pricing": { "basePrice": 13999, "originalPrice": 17999, "currency": "INR", "taxesPercent": 5, "breakfastIncluded": true },
+      "rating": { "average": 4.7, "totalReviews": 4210, "cleanliness": 4.8, "service": 4.8, "location": 4.9, "valueForMoney": 4.4 },
+      "roomTypes": [
+        { "name": "Marina View Room", "price": 13999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Executive Suite", "price": 22999, "maxGuests": 4, "bedType": "King + 2 Twin" }
+      ],
+      "amenities": ["Infinity Pool", "Private Beach Access", "Free WiFi", "Spa", "Gym", "Multiple Restaurants", "Valet Parking"],
+      "images": ["https://picsum.photos/seed/hotel5a/1000/650", "https://picsum.photos/seed/hotel5b/1000/650", "https://picsum.photos/seed/hotel5c/1000/650"],
+      "policies": { "checkIn": "3:00 PM", "checkOut": "12:00 PM", "cancellation": "Free cancellation up to 72 hrs before check-in", "petsAllowed": false },
+      "tags": ["Luxury", "Marina View", "International"],
+      "description": "Waterfront luxury hotel in Dubai Marina with skyline views and a private beach club."
+    },
+    {
+      "id": "H006",
+      "name": "Sunset Paradise Resort Maldives",
+      "brand": "Paradise Collection",
+      "starRating": 5,
+      "propertyType": "Overwater Resort",
+      "location": { "city": "Malé Atoll", "state": "N/A", "country": "Maldives", "area": "South Malé Atoll", "latitude": 4.1755, "longitude": 73.5093, "distanceFromLandmark": "25 min speedboat from Malé Airport" },
+      "pricing": { "basePrice": 24999, "originalPrice": 29999, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.9, "totalReviews": 1560, "cleanliness": 5.0, "service": 4.9, "location": 5.0, "valueForMoney": 4.5 },
+      "roomTypes": [
+        { "name": "Overwater Villa", "price": 24999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Beach Villa with Pool", "price": 31999, "maxGuests": 3, "bedType": "King" }
+      ],
+      "amenities": ["Overwater Deck", "All Meals Included", "Free WiFi", "Snorkeling Gear", "Spa", "Butler Service", "Private Pool (select rooms)"],
+      "images": ["https://picsum.photos/seed/hotel6a/1000/650", "https://picsum.photos/seed/hotel6b/1000/650", "https://picsum.photos/seed/hotel6c/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "12:00 PM", "cancellation": "Free cancellation up to 7 days before check-in", "petsAllowed": false },
+      "tags": ["Honeymoon Special", "Overwater", "International"],
+      "description": "Iconic overwater resort with direct lagoon access and all-inclusive dining."
+    },
+    {
+      "id": "H007",
+      "name": "Backwater Heritage Hotel Alleppey",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Heritage Hotel",
+      "location": { "city": "Alleppey", "state": "Kerala", "country": "India", "area": "Punnamada", "latitude": 9.4981, "longitude": 76.3388, "distanceFromLandmark": "500 m from Backwater Jetty" },
+      "pricing": { "basePrice": 4499, "originalPrice": 5499, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.6, "totalReviews": 1240, "cleanliness": 4.7, "service": 4.6, "location": 4.8, "valueForMoney": 4.5 },
+      "roomTypes": [
+        { "name": "Backwater View Room", "price": 4499, "maxGuests": 2, "bedType": "Queen" },
+        { "name": "Heritage Cottage", "price": 6499, "maxGuests": 3, "bedType": "King" }
+      ],
+      "amenities": ["Backwater View", "Ayurvedic Spa", "Free WiFi", "Free Parking", "Restaurant", "Houseboat Booking Assistance"],
+      "images": ["https://picsum.photos/seed/hotel7a/1000/650", "https://picsum.photos/seed/hotel7b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["Backwater View", "Heritage"],
+      "description": "Traditional Kerala-style heritage hotel with direct backwater views and Ayurvedic spa treatments."
+    },
+    {
+      "id": "H008",
+      "name": "Golden Sands Hotel Phuket",
+      "brand": "Golden Collection",
+      "starRating": 4,
+      "propertyType": "Beach Hotel",
+      "location": { "city": "Phuket", "state": "N/A", "country": "Thailand", "area": "Patong Beach", "latitude": 7.8965, "longitude": 98.2965, "distanceFromLandmark": "150 m from Patong Beach" },
+      "pricing": { "basePrice": 6499, "originalPrice": 7999, "currency": "INR", "taxesPercent": 7, "breakfastIncluded": true },
+      "rating": { "average": 4.5, "totalReviews": 2870, "cleanliness": 4.5, "service": 4.6, "location": 4.8, "valueForMoney": 4.4 },
+      "roomTypes": [
+        { "name": "Deluxe Room", "price": 6499, "maxGuests": 2, "bedType": "King" },
+        { "name": "Pool Access Room", "price": 8999, "maxGuests": 2, "bedType": "King" }
+      ],
+      "amenities": ["Beach Access", "Swimming Pool", "Free WiFi", "Rooftop Bar", "Free Parking", "Airport Shuttle"],
+      "images": ["https://picsum.photos/seed/hotel8a/1000/650", "https://picsum.photos/seed/hotel8b/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["Beachfront", "International", "Nightlife"],
+      "description": "Vibrant beachfront hotel steps from Patong Beach's restaurants, bars and nightlife."
+    },
+    {
+      "id": "H009",
+      "name": "Caldera Cliff Hotel Santorini",
+      "brand": "Independent",
+      "starRating": 5,
+      "propertyType": "Boutique Hotel",
+      "location": { "city": "Oia", "state": "Santorini", "country": "Greece", "area": "Caldera Rim", "latitude": 36.4618, "longitude": 25.3753, "distanceFromLandmark": "On the Caldera cliff edge" },
+      "pricing": { "basePrice": 21999, "originalPrice": 26999, "currency": "INR", "taxesPercent": 13, "breakfastIncluded": true },
+      "rating": { "average": 4.9, "totalReviews": 1130, "cleanliness": 5.0, "service": 4.9, "location": 5.0, "valueForMoney": 4.3 },
+      "roomTypes": [
+        { "name": "Caldera View Suite", "price": 21999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Suite with Private Plunge Pool", "price": 32999, "maxGuests": 2, "bedType": "King" }
+      ],
+      "amenities": ["Caldera View", "Private Plunge Pool (select suites)", "Free WiFi", "Sunset Terrace", "Breakfast Included", "Concierge"],
+      "images": ["https://picsum.photos/seed/hotel9a/1000/650", "https://picsum.photos/seed/hotel9b/1000/650", "https://picsum.photos/seed/hotel9c/1000/650"],
+      "policies": { "checkIn": "3:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 7 days before check-in", "petsAllowed": false },
+      "tags": ["Honeymoon Special", "Caldera View", "International"],
+      "description": "Cave-style boutique hotel carved into the Oia cliffs with world-famous sunset views."
+    },
+    {
+      "id": "H010",
+      "name": "City Central Hotel Delhi",
+      "brand": "Independent",
+      "starRating": 3,
+      "propertyType": "Business Hotel",
+      "location": { "city": "New Delhi", "state": "Delhi", "country": "India", "area": "Connaught Place", "latitude": 28.6315, "longitude": 77.2167, "distanceFromLandmark": "600 m from Connaught Place" },
+      "pricing": { "basePrice": 2799, "originalPrice": 3499, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": false },
+      "rating": { "average": 4.2, "totalReviews": 1680, "cleanliness": 4.3, "service": 4.1, "location": 4.6, "valueForMoney": 4.4 },
+      "roomTypes": [
+        { "name": "Standard Room", "price": 2799, "maxGuests": 2, "bedType": "Queen" },
+        { "name": "Business Room", "price": 3799, "maxGuests": 2, "bedType": "King" }
+      ],
+      "amenities": ["Free WiFi", "24-Hour Front Desk", "Business Center", "Restaurant", "Free Parking"],
+      "images": ["https://picsum.photos/seed/hotel10a/1000/650", "https://picsum.photos/seed/hotel10b/1000/650"],
+      "policies": { "checkIn": "12:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 24 hrs before check-in", "petsAllowed": false },
+      "tags": ["Business Friendly", "Budget Friendly", "Central Location"],
+      "description": "Practical business hotel in the heart of Delhi, walking distance from Connaught Place."
+    },
+    {
+      "id": "H011",
+      "name": "Ubud Jungle Resort & Spa",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Jungle Resort",
+      "location": { "city": "Ubud", "state": "Bali", "country": "Indonesia", "area": "Tegalalang", "latitude": -8.4310, "longitude": 115.2790, "distanceFromLandmark": "1.5 km from Tegalalang Rice Terrace" },
+      "pricing": { "basePrice": 8999, "originalPrice": 10999, "currency": "INR", "taxesPercent": 11, "breakfastIncluded": true },
+      "rating": { "average": 4.8, "totalReviews": 2210, "cleanliness": 4.9, "service": 4.8, "location": 4.7, "valueForMoney": 4.6 },
+      "roomTypes": [
+        { "name": "Jungle View Room", "price": 8999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Pool Villa", "price": 14999, "maxGuests": 3, "bedType": "King" }
+      ],
+      "amenities": ["Infinity Pool", "Rice Field View", "Free WiFi", "Daily Housekeeping", "Spa", "Yoga Deck", "Restaurant"],
+      "images": ["https://picsum.photos/seed/hotel11a/1000/650", "https://picsum.photos/seed/hotel11b/1000/650", "https://picsum.photos/seed/hotel11c/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 72 hrs before check-in", "petsAllowed": false },
+      "tags": ["Infinity Pool", "International", "Wellness"],
+      "description": "Tranquil jungle resort near Ubud's rice terraces with an infinity pool and full-service spa."
+    },
+    {
+      "id": "H012",
+      "name": "Riverside Grand Rishikesh",
+      "brand": "Independent",
+      "starRating": 3,
+      "propertyType": "Riverside Hotel",
+      "location": { "city": "Rishikesh", "state": "Uttarakhand", "country": "India", "area": "Tapovan", "latitude": 30.1220, "longitude": 78.3200, "distanceFromLandmark": "200 m from Ganges River" },
+      "pricing": { "basePrice": 2299, "originalPrice": 2899, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.4, "totalReviews": 910, "cleanliness": 4.4, "service": 4.3, "location": 4.7, "valueForMoney": 4.6 },
+      "roomTypes": [
+        { "name": "River View Room", "price": 2299, "maxGuests": 2, "bedType": "Queen" },
+        { "name": "Deluxe Room", "price": 2999, "maxGuests": 3, "bedType": "King" }
+      ],
+      "amenities": ["River View", "Yoga Deck", "Free WiFi", "Free Breakfast", "Free Parking"],
+      "images": ["https://picsum.photos/seed/hotel12a/1000/650", "https://picsum.photos/seed/hotel12b/1000/650"],
+      "policies": { "checkIn": "12:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 24 hrs before check-in", "petsAllowed": false },
+      "tags": ["River View", "Budget Friendly", "Wellness"],
+      "description": "Riverside hotel with a private yoga deck overlooking the Ganges, popular with wellness travellers."
+    },
+    {
+      "id": "H013",
+      "name": "Marina Bay Sands Singapore",
+      "brand": "Marina Collection",
+      "starRating": 5,
+      "propertyType": "Luxury Hotel",
+      "location": { "city": "Singapore", "state": "N/A", "country": "Singapore", "area": "Marina Bay", "latitude": 1.2834, "longitude": 103.8607, "distanceFromLandmark": "On Marina Bay waterfront" },
+      "pricing": { "basePrice": 28999, "originalPrice": 34999, "currency": "INR", "taxesPercent": 9, "breakfastIncluded": false },
+      "rating": { "average": 4.7, "totalReviews": 8420, "cleanliness": 4.8, "service": 4.7, "location": 5.0, "valueForMoney": 4.2 },
+      "roomTypes": [
+        { "name": "Deluxe Room", "price": 28999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Club Room", "price": 39999, "maxGuests": 2, "bedType": "King" }
+      ],
+      "amenities": ["Infinity Rooftop Pool", "Free WiFi", "Casino", "Multiple Restaurants", "Spa", "Shopping Mall Access"],
+      "images": ["https://picsum.photos/seed/hotel13a/1000/650", "https://picsum.photos/seed/hotel13b/1000/650", "https://picsum.photos/seed/hotel13c/1000/650"],
+      "policies": { "checkIn": "3:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 72 hrs before check-in", "petsAllowed": false },
+      "tags": ["Iconic", "Luxury", "International"],
+      "description": "World-famous hotel with the iconic rooftop infinity pool overlooking Singapore's skyline."
+    },
+    {
+      "id": "H014",
+      "name": "Desert Rose Camp Jaisalmer",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Desert Camp",
+      "location": { "city": "Jaisalmer", "state": "Rajasthan", "country": "India", "area": "Sam Sand Dunes", "latitude": 26.9157, "longitude": 70.9083, "distanceFromLandmark": "40 km from Jaisalmer Fort" },
+      "pricing": { "basePrice": 5999, "originalPrice": 7499, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.5, "totalReviews": 760, "cleanliness": 4.6, "service": 4.6, "location": 4.5, "valueForMoney": 4.4 },
+      "roomTypes": [
+        { "name": "Luxury Tent", "price": 5999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Family Tent", "price": 8999, "maxGuests": 4, "bedType": "2 King" }
+      ],
+      "amenities": ["Desert View", "Camel Safari", "Bonfire with Folk Show", "All Meals Included", "Free WiFi (Common Area)"],
+      "images": ["https://picsum.photos/seed/hotel14a/1000/650", "https://picsum.photos/seed/hotel14b/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 72 hrs before check-in", "petsAllowed": false },
+      "tags": ["Desert Experience", "All Inclusive"],
+      "description": "Luxury desert camp offering camel safaris and traditional Rajasthani entertainment under the stars."
+    },
+    {
+      "id": "H015",
+      "name": "Cliffside Boutique Varkala",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Boutique Hotel",
+      "location": { "city": "Varkala", "state": "Kerala", "country": "India", "area": "Varkala Cliff", "latitude": 8.7379, "longitude": 76.7163, "distanceFromLandmark": "100 m from Varkala Cliff Beach" },
+      "pricing": { "basePrice": 3799, "originalPrice": 4699, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.6, "totalReviews": 1340, "cleanliness": 4.7, "service": 4.6, "location": 4.9, "valueForMoney": 4.5 },
+      "roomTypes": [
+        { "name": "Sea Facing Room", "price": 3799, "maxGuests": 2, "bedType": "Queen" },
+        { "name": "Cliff View Suite", "price": 5499, "maxGuests": 3, "bedType": "King" }
+      ],
+      "amenities": ["Cliff View", "Sea Facing", "Free WiFi", "Restaurant", "Ayurvedic Massage"],
+      "images": ["https://picsum.photos/seed/hotel15a/1000/650", "https://picsum.photos/seed/hotel15b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["Cliff View", "Sea Facing"],
+      "description": "Boutique clifftop hotel overlooking the Arabian Sea, close to Varkala's famous cafes."
+    },
+    {
+      "id": "H016",
+      "name": "Alpine View Hotel Interlaken",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Mountain Hotel",
+      "location": { "city": "Interlaken", "state": "Bern", "country": "Switzerland", "area": "Near Lake Thun", "latitude": 46.6863, "longitude": 7.8632, "distanceFromLandmark": "2 km from Lake Thun" },
+      "pricing": { "basePrice": 16999, "originalPrice": 19999, "currency": "INR", "taxesPercent": 8, "breakfastIncluded": true },
+      "rating": { "average": 4.7, "totalReviews": 890, "cleanliness": 4.8, "service": 4.7, "location": 4.8, "valueForMoney": 4.3 },
+      "roomTypes": [
+        { "name": "Mountain View Room", "price": 16999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Family Suite", "price": 24999, "maxGuests": 4, "bedType": "King + 2 Twin" }
+      ],
+      "amenities": ["Mountain View", "Fireplace Lounge", "Free WiFi", "Restaurant", "Ski Storage", "Free Parking"],
+      "images": ["https://picsum.photos/seed/hotel16a/1000/650", "https://picsum.photos/seed/hotel16b/1000/650"],
+      "policies": { "checkIn": "3:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 7 days before check-in", "petsAllowed": true },
+      "tags": ["Alpine Views", "International"],
+      "description": "Wooden alpine hotel with sweeping views of the Swiss Alps, minutes from Lake Thun."
+    },
+    {
+      "id": "H017",
+      "name": "Ella Hills Boutique Stay",
+      "brand": "Independent",
+      "starRating": 3,
+      "propertyType": "Boutique Hotel",
+      "location": { "city": "Ella", "state": "Uva Province", "country": "Sri Lanka", "area": "Near Nine Arches Bridge", "latitude": 6.8667, "longitude": 81.0466, "distanceFromLandmark": "1.2 km from Nine Arches Bridge" },
+      "pricing": { "basePrice": 3999, "originalPrice": 4799, "currency": "INR", "taxesPercent": 8, "breakfastIncluded": true },
+      "rating": { "average": 4.5, "totalReviews": 640, "cleanliness": 4.5, "service": 4.6, "location": 4.7, "valueForMoney": 4.5 },
+      "roomTypes": [
+        { "name": "Tea Estate View Room", "price": 3999, "maxGuests": 2, "bedType": "Queen" }
+      ],
+      "amenities": ["Tea Estate View", "Free WiFi", "Home-cooked Meals", "Trekking Assistance", "Free Parking"],
+      "images": ["https://picsum.photos/seed/hotel17a/1000/650", "https://picsum.photos/seed/hotel17b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["Budget Friendly", "International"],
+      "description": "Family-run boutique stay amid Ella's tea estates, close to the iconic Nine Arches Bridge."
+    },
+    {
+      "id": "H018",
+      "name": "Lakeside Retreat Pokhara",
+      "brand": "Independent",
+      "starRating": 3,
+      "propertyType": "Lakeside Hotel",
+      "location": { "city": "Pokhara", "state": "Gandaki", "country": "Nepal", "area": "Lakeside", "latitude": 28.2096, "longitude": 83.9856, "distanceFromLandmark": "300 m from Phewa Lake" },
+      "pricing": { "basePrice": 2499, "originalPrice": 2999, "currency": "INR", "taxesPercent": 13, "breakfastIncluded": true },
+      "rating": { "average": 4.4, "totalReviews": 720, "cleanliness": 4.4, "service": 4.3, "location": 4.8, "valueForMoney": 4.6 },
+      "roomTypes": [
+        { "name": "Lake View Room", "price": 2499, "maxGuests": 2, "bedType": "Queen" }
+      ],
+      "amenities": ["Lake View", "Mountain View", "Free WiFi", "Restaurant", "Trekking Assistance"],
+      "images": ["https://picsum.photos/seed/hotel18a/1000/650", "https://picsum.photos/seed/hotel18b/1000/650"],
+      "policies": { "checkIn": "12:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 24 hrs before check-in", "petsAllowed": false },
+      "tags": ["Budget Friendly", "Lake View", "International"],
+      "description": "Lakeside hotel with Annapurna range views, a popular base for Pokhara trekkers."
+    },
+    {
+      "id": "H019",
+      "name": "Ancient Town Riverside Hoi An",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Boutique Hotel",
+      "location": { "city": "Hoi An", "state": "Quang Nam", "country": "Vietnam", "area": "Cam Nam Island", "latitude": 15.8801, "longitude": 108.3380, "distanceFromLandmark": "600 m from Hoi An Ancient Town" },
+      "pricing": { "basePrice": 4999, "originalPrice": 5999, "currency": "INR", "taxesPercent": 10, "breakfastIncluded": true },
+      "rating": { "average": 4.6, "totalReviews": 1450, "cleanliness": 4.7, "service": 4.6, "location": 4.8, "valueForMoney": 4.6 },
+      "roomTypes": [
+        { "name": "River View Room", "price": 4999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Pool Access Suite", "price": 7499, "maxGuests": 3, "bedType": "King" }
+      ],
+      "amenities": ["River View", "Swimming Pool", "Free WiFi", "Bicycle Rental", "Restaurant", "Free Parking"],
+      "images": ["https://picsum.photos/seed/hotel19a/1000/650", "https://picsum.photos/seed/hotel19b/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["River View", "International"],
+      "description": "Riverside boutique hotel near Hoi An's lantern-lit ancient town, with bicycles included."
+    },
+    {
+      "id": "H020",
+      "name": "Whitewashed Bay Hotel Ibiza",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Beach Hotel",
+      "location": { "city": "Ibiza Town", "state": "Balearic Islands", "country": "Spain", "area": "Es Vive", "latitude": 38.9067, "longitude": 1.4206, "distanceFromLandmark": "700 m from Es Vive Beach" },
+      "pricing": { "basePrice": 11999, "originalPrice": 14999, "currency": "INR", "taxesPercent": 10, "breakfastIncluded": true },
+      "rating": { "average": 4.6, "totalReviews": 1780, "cleanliness": 4.6, "service": 4.5, "location": 4.7, "valueForMoney": 4.3 },
+      "roomTypes": [
+        { "name": "Standard Room", "price": 11999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Pool Suite", "price": 17999, "maxGuests": 3, "bedType": "King" }
+      ],
+      "amenities": ["Private Pool Access", "Sea View", "Free WiFi", "Outdoor Bar", "Free Parking", "Daily Housekeeping"],
+      "images": ["https://picsum.photos/seed/hotel20a/1000/650", "https://picsum.photos/seed/hotel20b/1000/650"],
+      "policies": { "checkIn": "3:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 7 days before check-in", "petsAllowed": false },
+      "tags": ["Party Destination", "International"],
+      "description": "Classic whitewashed Ibiza hotel with a pool bar, minutes from the island's beach clubs."
+    },
+    {
+      "id": "H021",
+      "name": "Coffee Estate Bungalow Coorg",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Plantation Stay",
+      "location": { "city": "Coorg", "state": "Karnataka", "country": "India", "area": "Madikeri", "latitude": 12.4244, "longitude": 75.7382, "distanceFromLandmark": "3 km from Abbey Falls" },
+      "pricing": { "basePrice": 4299, "originalPrice": 5299, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.8, "totalReviews": 690, "cleanliness": 4.9, "service": 4.8, "location": 4.7, "valueForMoney": 4.7 },
+      "roomTypes": [
+        { "name": "Plantation View Room", "price": 4299, "maxGuests": 2, "bedType": "Queen" }
+      ],
+      "amenities": ["Coffee Plantation View", "Bonfire", "Free WiFi", "Nature Walks", "Free Parking", "Home-cooked Meals"],
+      "images": ["https://picsum.photos/seed/hotel21a/1000/650", "https://picsum.photos/seed/hotel21b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 72 hrs before check-in", "petsAllowed": true },
+      "tags": ["Nature Escape", "Top Rated"],
+      "description": "Bungalow inside a working coffee estate — wake up to misty plantation views and birdsong."
+    },
+    {
+      "id": "H022",
+      "name": "Skyline Business Hotel Bangalore",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Business Hotel",
+      "location": { "city": "Bengaluru", "state": "Karnataka", "country": "India", "area": "MG Road", "latitude": 12.9758, "longitude": 77.6045, "distanceFromLandmark": "400 m from MG Road Metro Station" },
+      "pricing": { "basePrice": 4199, "originalPrice": 4999, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.4, "totalReviews": 2100, "cleanliness": 4.5, "service": 4.4, "location": 4.7, "valueForMoney": 4.3 },
+      "roomTypes": [
+        { "name": "Executive Room", "price": 4199, "maxGuests": 2, "bedType": "King" },
+        { "name": "Business Suite", "price": 5999, "maxGuests": 2, "bedType": "King" }
+      ],
+      "amenities": ["Free WiFi", "Business Center", "Gym", "Restaurant", "Free Parking", "Conference Rooms"],
+      "images": ["https://picsum.photos/seed/hotel22a/1000/650", "https://picsum.photos/seed/hotel22b/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 24 hrs before check-in", "petsAllowed": false },
+      "tags": ["Business Friendly", "Central Location"],
+      "description": "Modern business hotel on MG Road with easy access to Bengaluru's commercial district."
+    },
+    {
+      "id": "H023",
+      "name": "Colonial Heritage Bungalow Ooty",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Heritage Hotel",
+      "location": { "city": "Ooty", "state": "Tamil Nadu", "country": "India", "area": "Fernhill", "latitude": 11.4064, "longitude": 76.6932, "distanceFromLandmark": "2.5 km from Ooty Lake" },
+      "pricing": { "basePrice": 4799, "originalPrice": 5799, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.6, "totalReviews": 830, "cleanliness": 4.7, "service": 4.7, "location": 4.6, "valueForMoney": 4.5 },
+      "roomTypes": [
+        { "name": "Garden View Room", "price": 4799, "maxGuests": 2, "bedType": "Queen" }
+      ],
+      "amenities": ["Garden View", "Fireplace", "Free WiFi", "Home-cooked Meals", "Free Parking"],
+      "images": ["https://picsum.photos/seed/hotel23a/1000/650", "https://picsum.photos/seed/hotel23b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["Heritage Stay", "Family Friendly"],
+      "description": "British-era bungalow with landscaped gardens and a crackling fireplace lounge."
+    },
+    {
+      "id": "H024",
+      "name": "Vineyard Manor Nashik",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Vineyard Resort",
+      "location": { "city": "Nashik", "state": "Maharashtra", "country": "India", "area": "Gangapur", "latitude": 20.0110, "longitude": 73.6636, "distanceFromLandmark": "6 km from Sula Vineyards" },
+      "pricing": { "basePrice": 5299, "originalPrice": 6499, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.5, "totalReviews": 540, "cleanliness": 4.6, "service": 4.5, "location": 4.5, "valueForMoney": 4.4 },
+      "roomTypes": [
+        { "name": "Vineyard View Room", "price": 5299, "maxGuests": 2, "bedType": "King" }
+      ],
+      "amenities": ["Vineyard View", "Free WiFi", "Wine Tasting Nearby", "Restaurant", "Free Parking", "Swimming Pool"],
+      "images": ["https://picsum.photos/seed/hotel24a/1000/650", "https://picsum.photos/seed/hotel24b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 24 hrs before check-in", "petsAllowed": false },
+      "tags": ["Vineyard View", "Weekend Getaway"],
+      "description": "Resort surrounded by vineyards, close to Nashik's popular wine tasting estates."
+    },
+    {
+      "id": "H025",
+      "name": "Panorama Peak Hotel Manali",
+      "brand": "Independent",
+      "starRating": 3,
+      "propertyType": "Hill Hotel",
+      "location": { "city": "Manali", "state": "Himachal Pradesh", "country": "India", "area": "Old Manali", "latitude": 32.2517, "longitude": 77.1892, "distanceFromLandmark": "1.2 km from Manali Mall Road" },
+      "pricing": { "basePrice": 2999, "originalPrice": 3699, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.4, "totalReviews": 1120, "cleanliness": 4.4, "service": 4.3, "location": 4.7, "valueForMoney": 4.5 },
+      "roomTypes": [
+        { "name": "Valley View Room", "price": 2999, "maxGuests": 2, "bedType": "Queen" },
+        { "name": "Family Room", "price": 4499, "maxGuests": 4, "bedType": "2 Queen" }
+      ],
+      "amenities": ["Mountain View", "Bonfire Area", "Free WiFi", "Restaurant", "Heater", "Free Parking"],
+      "images": ["https://picsum.photos/seed/hotel25a/1000/650", "https://picsum.photos/seed/hotel25b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 24 hrs before check-in", "petsAllowed": true },
+      "tags": ["Mountain View", "Budget Friendly", "Family Friendly"],
+      "description": "Value-for-money hill hotel with valley views, close to Old Manali's cafes and river."
+    },
+    {
+      "id": "H026",
+      "name": "Andaman Coral Bay Resort",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Beach Resort",
+      "location": { "city": "Havelock Island", "state": "Andaman & Nicobar Islands", "country": "India", "area": "Radhanagar Beach", "latitude": 11.9800, "longitude": 92.9850, "distanceFromLandmark": "400 m from Radhanagar Beach" },
+      "pricing": { "basePrice": 6999, "originalPrice": 8499, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.7, "totalReviews": 980, "cleanliness": 4.7, "service": 4.7, "location": 4.9, "valueForMoney": 4.4 },
+      "roomTypes": [
+        { "name": "Beach Hut", "price": 6999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Sea View Cottage", "price": 9999, "maxGuests": 3, "bedType": "King" }
+      ],
+      "amenities": ["Beach Access", "Snorkeling Gear", "Free WiFi", "Restaurant", "Free Parking"],
+      "images": ["https://picsum.photos/seed/hotel26a/1000/650", "https://picsum.photos/seed/hotel26b/1000/650"],
+      "policies": { "checkIn": "2:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["Beachfront", "Islands"],
+      "description": "Beach resort steps from Radhanagar Beach, ranked among Asia's best beaches."
+    },
+    {
+      "id": "H027",
+      "name": "French Quarter Heritage Hotel Pondicherry",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Heritage Hotel",
+      "location": { "city": "Pondicherry", "state": "Puducherry", "country": "India", "area": "White Town", "latitude": 11.9340, "longitude": 79.8306, "distanceFromLandmark": "400 m from Promenade Beach" },
+      "pricing": { "basePrice": 4999, "originalPrice": 5999, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.6, "totalReviews": 1050, "cleanliness": 4.7, "service": 4.6, "location": 4.8, "valueForMoney": 4.5 },
+      "roomTypes": [
+        { "name": "Colonial Room", "price": 4999, "maxGuests": 2, "bedType": "Queen" }
+      ],
+      "amenities": ["Sea View", "French Colonial Architecture", "Free WiFi", "Free Parking", "Cycle Rental", "Restaurant"],
+      "images": ["https://picsum.photos/seed/hotel27a/1000/650", "https://picsum.photos/seed/hotel27b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["Heritage Stay", "French Quarter"],
+      "description": "Colonial-style heritage hotel in Pondicherry's iconic White Town, near the promenade."
+    },
+    {
+      "id": "H028",
+      "name": "Forest Canopy Resort Wayanad",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "Eco Resort",
+      "location": { "city": "Wayanad", "state": "Kerala", "country": "India", "area": "Vythiri", "latitude": 11.6854, "longitude": 76.1320, "distanceFromLandmark": "4 km from Chembra Peak" },
+      "pricing": { "basePrice": 5499, "originalPrice": 6799, "currency": "INR", "taxesPercent": 12, "breakfastIncluded": true },
+      "rating": { "average": 4.7, "totalReviews": 720, "cleanliness": 4.8, "service": 4.7, "location": 4.6, "valueForMoney": 4.6 },
+      "roomTypes": [
+        { "name": "Forest View Room", "price": 5499, "maxGuests": 2, "bedType": "King" },
+        { "name": "Treehouse Room", "price": 8499, "maxGuests": 2, "bedType": "King" }
+      ],
+      "amenities": ["Forest View", "Treehouse Deck", "Free WiFi", "Nature Walks", "Free Parking", "Restaurant"],
+      "images": ["https://picsum.photos/seed/hotel28a/1000/650", "https://picsum.photos/seed/hotel28b/1000/650"],
+      "policies": { "checkIn": "1:00 PM", "checkOut": "11:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["Nature Escape", "Eco Friendly"],
+      "description": "Eco resort bordering Wayanad's forests, with treehouse rooms for wildlife watching."
+    },
+    {
+      "id": "H029",
+      "name": "Le Grand Paris Hotel",
+      "brand": "Independent",
+      "starRating": 5,
+      "propertyType": "Luxury Hotel",
+      "location": { "city": "Paris", "state": "Île-de-France", "country": "France", "area": "Champs-Élysées", "latitude": 48.8698, "longitude": 2.3078, "distanceFromLandmark": "300 m from Champs-Élysées" },
+      "pricing": { "basePrice": 32999, "originalPrice": 38999, "currency": "INR", "taxesPercent": 10, "breakfastIncluded": true },
+      "rating": { "average": 4.8, "totalReviews": 3560, "cleanliness": 4.9, "service": 4.8, "location": 5.0, "valueForMoney": 4.2 },
+      "roomTypes": [
+        { "name": "Classic Room", "price": 32999, "maxGuests": 2, "bedType": "King" },
+        { "name": "Eiffel View Suite", "price": 49999, "maxGuests": 3, "bedType": "King" }
+      ],
+      "amenities": ["Eiffel Tower View (select rooms)", "Free WiFi", "Spa", "Michelin-listed Restaurant", "Concierge", "Valet Parking"],
+      "images": ["https://picsum.photos/seed/hotel29a/1000/650", "https://picsum.photos/seed/hotel29b/1000/650", "https://picsum.photos/seed/hotel29c/1000/650"],
+      "policies": { "checkIn": "3:00 PM", "checkOut": "12:00 PM", "cancellation": "Free cancellation up to 7 days before check-in", "petsAllowed": true },
+      "tags": ["Luxury", "Iconic", "International"],
+      "description": "Elegant luxury hotel steps from the Champs-Élysées, with select rooms offering Eiffel Tower views."
+    },
+    {
+      "id": "H030",
+      "name": "Sakura Inn Tokyo",
+      "brand": "Independent",
+      "starRating": 4,
+      "propertyType": "City Hotel",
+      "location": { "city": "Tokyo", "state": "N/A", "country": "Japan", "area": "Shinjuku", "latitude": 35.6938, "longitude": 139.7034, "distanceFromLandmark": "400 m from Shinjuku Station" },
+      "pricing": { "basePrice": 14999, "originalPrice": 17999, "currency": "INR", "taxesPercent": 10, "breakfastIncluded": true },
+      "rating": { "average": 4.6, "totalReviews": 2980, "cleanliness": 4.8, "service": 4.7, "location": 4.9, "valueForMoney": 4.4 },
+      "roomTypes": [
+        { "name": "Standard Room", "price": 14999, "maxGuests": 2, "bedType": "Queen" },
+        { "name": "City View Room", "price": 18999, "maxGuests": 2, "bedType": "King" }
+      ],
+      "amenities": ["Free WiFi", "City View", "Restaurant", "24-Hour Front Desk", "Vending Machines", "Laundry Service"],
+      "images": ["https://picsum.photos/seed/hotel30a/1000/650", "https://picsum.photos/seed/hotel30b/1000/650"],
+      "policies": { "checkIn": "3:00 PM", "checkOut": "10:00 AM", "cancellation": "Free cancellation up to 48 hrs before check-in", "petsAllowed": false },
+      "tags": ["City Center", "International"],
+      "description": "Modern hotel in Shinjuku, minutes from Tokyo's busiest station and nightlife district."
+    }
+  ]
+}

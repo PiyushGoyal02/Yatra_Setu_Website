@@ -1,7 +1,8 @@
 const express = require("express")
 const route = express.Router();
 
-const { createPackage } = require("../Cantrollers/HolidyasPackages")
+const { createPackage, getHolidaysData } = require("../Cantrollers/HolidyasPackages")
 route.post("/holidaysJSON", createPackage);
+route.get("/getHolidaysDetails", getHolidaysData)
 
 module.exports = route;
