@@ -25,11 +25,13 @@ const AuthRoute = require("./Routes/AuthRoutes")
 const villaJSON = require("./Routes/villaJSONRoute")
 const holidaysJSON = require("./Routes/holidaysPackages")
 const hotelJSONDetails = require("./Routes/HotelRoute")
+const flightJSONData = require("./Routes/FlightRoutes")
 
 app.use("/api/auth", AuthRoute)
 app.use("/api/villaJSON", villaJSON)
 app.use("/api/holidaysJSON", holidaysJSON)
 app.use("/api/hotelJSON", hotelJSONDetails)
+app.use("/api/flightJSON", flightJSONData)
 
 // Root Route
 app.get("/", (req, res) => {

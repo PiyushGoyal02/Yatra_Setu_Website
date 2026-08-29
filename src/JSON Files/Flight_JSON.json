@@ -1,0 +1,1530 @@
+{
+  "flights": [
+    {
+      "flightId": "FL001",
+      "airline": {
+        "name": "IndiGo",
+        "code": "6E",
+        "logo": "https://picsum.photos/seed/indigo/200/100"
+      },
+      "flightNumber": "6E-2034",
+      "departure": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-15",
+        "time": "06:30 AM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-15",
+        "time": "08:40 AM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "2h 10m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320neo",
+        "registration": "VT-IND1"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 4899,
+        "taxes": 588,
+        "fees": 199,
+        "totalPrice": 5686,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 18,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "WiFi",
+        "USB Charging",
+        "Air Conditioning"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Cheapest",
+        "Non-stop",
+        "Early Morning"
+      ]
+    },
+    {
+      "flightId": "FL002",
+      "airline": {
+        "name": "Air India",
+        "code": "AI",
+        "logo": "https://picsum.photos/seed/airindia/200/100"
+      },
+      "flightNumber": "AI-864",
+      "departure": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-15",
+        "time": "09:15 AM",
+        "terminal": "Terminal 3"
+      },
+      "arrival": {
+        "airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-15",
+        "time": "11:25 AM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "2h 10m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A321neo",
+        "registration": "VT-AIR1"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 5299,
+        "taxes": 636,
+        "fees": 199,
+        "totalPrice": 6134,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 12,
+      "refundable": true,
+      "mealIncluded": true,
+      "amenities": [
+        "WiFi",
+        "USB Charging",
+        "In-flight Entertainment",
+        "Meal"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Refundable",
+        "Meal Included"
+      ]
+    },
+    {
+      "flightId": "FL003",
+      "airline": {
+        "name": "Vistara",
+        "code": "UK",
+        "logo": "https://picsum.photos/seed/vistara/200/100"
+      },
+      "flightNumber": "UK-945",
+      "departure": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-15",
+        "time": "01:30 PM",
+        "terminal": "Terminal 3"
+      },
+      "arrival": {
+        "airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-15",
+        "time": "03:45 PM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "2h 15m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320",
+        "registration": "VT-VIS1"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 5799,
+        "taxes": 696,
+        "fees": 199,
+        "totalPrice": 6694,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 24,
+      "refundable": true,
+      "mealIncluded": true,
+      "amenities": [
+        "WiFi",
+        "USB Charging",
+        "In-flight Entertainment",
+        "Meal"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Premium",
+        "Refundable",
+        "Meal Included"
+      ]
+    },
+    {
+      "flightId": "FL004",
+      "airline": {
+        "name": "SpiceJet",
+        "code": "SG",
+        "logo": "https://picsum.photos/seed/spicejet/200/100"
+      },
+      "flightNumber": "SG-8169",
+      "departure": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-15",
+        "time": "05:45 PM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Kempegowda International Airport",
+        "airportCode": "BLR",
+        "city": "Bengaluru",
+        "country": "India",
+        "date": "2026-09-15",
+        "time": "08:25 PM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "2h 40m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Boeing 737",
+        "registration": "VT-SPC1"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 4199,
+        "taxes": 504,
+        "fees": 199,
+        "totalPrice": 4902,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 9,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "Air Conditioning",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Budget",
+        "Evening Flight"
+      ]
+    },
+    {
+      "flightId": "FL005",
+      "airline": {
+        "name": "Akasa Air",
+        "code": "QP",
+        "logo": "https://picsum.photos/seed/akasa/200/100"
+      },
+      "flightNumber": "QP-1123",
+      "departure": {
+        "airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-16",
+        "time": "07:00 AM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Kempegowda International Airport",
+        "airportCode": "BLR",
+        "city": "Bengaluru",
+        "country": "India",
+        "date": "2026-09-16",
+        "time": "08:40 AM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "1h 40m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Boeing 737 MAX",
+        "registration": "VT-AKA1"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 3599,
+        "taxes": 432,
+        "fees": 199,
+        "totalPrice": 4230,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 21,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "USB Charging",
+        "Air Conditioning"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Cheapest",
+        "Morning Flight"
+      ]
+    },
+    {
+      "flightId": "FL006",
+      "airline": {
+        "name": "IndiGo",
+        "code": "6E",
+        "logo": "https://picsum.photos/seed/indigo2/200/100"
+      },
+      "flightNumber": "6E-617",
+      "departure": {
+        "airport": "Kempegowda International Airport",
+        "airportCode": "BLR",
+        "city": "Bengaluru",
+        "country": "India",
+        "date": "2026-09-16",
+        "time": "10:20 AM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Rajiv Gandhi International Airport",
+        "airportCode": "HYD",
+        "city": "Hyderabad",
+        "country": "India",
+        "date": "2026-09-16",
+        "time": "11:35 AM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "1h 15m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320neo",
+        "registration": "VT-IND2"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 2899,
+        "taxes": 348,
+        "fees": 199,
+        "totalPrice": 3446,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 31,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "WiFi",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Cheapest",
+        "Short Flight"
+      ]
+    },
+    {
+      "flightId": "FL007",
+      "airline": {
+        "name": "Air India",
+        "code": "AI",
+        "logo": "https://picsum.photos/seed/airindia2/200/100"
+      },
+      "flightNumber": "AI-542",
+      "departure": {
+        "airport": "Chennai International Airport",
+        "airportCode": "MAA",
+        "city": "Chennai",
+        "country": "India",
+        "date": "2026-09-16",
+        "time": "08:15 AM",
+        "terminal": "Terminal 2"
+      },
+      "arrival": {
+        "airport": "Kempegowda International Airport",
+        "airportCode": "BLR",
+        "city": "Bengaluru",
+        "country": "India",
+        "date": "2026-09-16",
+        "time": "09:15 AM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "1h 00m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320neo",
+        "registration": "VT-AIR2"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 3099,
+        "taxes": 372,
+        "fees": 199,
+        "totalPrice": 3670,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 16,
+      "refundable": true,
+      "mealIncluded": true,
+      "amenities": [
+        "WiFi",
+        "Meal",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Refundable",
+        "Fastest"
+      ]
+    },
+    {
+      "flightId": "FL008",
+      "airline": {
+        "name": "IndiGo",
+        "code": "6E",
+        "logo": "https://picsum.photos/seed/indigo3/200/100"
+      },
+      "flightNumber": "6E-728",
+      "departure": {
+        "airport": "Chennai International Airport",
+        "airportCode": "MAA",
+        "city": "Chennai",
+        "country": "India",
+        "date": "2026-09-16",
+        "time": "02:30 PM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Netaji Subhas Chandra Bose International Airport",
+        "airportCode": "CCU",
+        "city": "Kolkata",
+        "country": "India",
+        "date": "2026-09-16",
+        "time": "05:00 PM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "2h 30m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A321",
+        "registration": "VT-IND3"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 4599,
+        "taxes": 552,
+        "fees": 199,
+        "totalPrice": 5350,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 14,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "WiFi",
+        "USB Charging",
+        "Air Conditioning"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Afternoon",
+        "Non-stop"
+      ]
+    },
+    {
+      "flightId": "FL009",
+      "airline": {
+        "name": "Vistara",
+        "code": "UK",
+        "logo": "https://picsum.photos/seed/vistara2/200/100"
+      },
+      "flightNumber": "UK-781",
+      "departure": {
+        "airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-17",
+        "time": "11:10 AM",
+        "terminal": "Terminal 2"
+      },
+      "arrival": {
+        "airport": "Kempegowda International Airport",
+        "airportCode": "BLR",
+        "city": "Bengaluru",
+        "country": "India",
+        "date": "2026-09-17",
+        "time": "12:55 PM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "1h 45m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320",
+        "registration": "VT-VIS2"
+      },
+      "class": "Business",
+      "pricing": {
+        "basePrice": 8999,
+        "taxes": 1080,
+        "fees": 299,
+        "totalPrice": 10378,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "seatsAvailable": 6,
+      "refundable": true,
+      "mealIncluded": true,
+      "amenities": [
+        "WiFi",
+        "Premium Meal",
+        "Priority Boarding",
+        "Extra Legroom"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Business Class",
+        "Premium",
+        "Refundable"
+      ]
+    },
+    {
+      "flightId": "FL010",
+      "airline": {
+        "name": "SpiceJet",
+        "code": "SG",
+        "logo": "https://picsum.photos/seed/spicejet2/200/100"
+      },
+      "flightNumber": "SG-241",
+      "departure": {
+        "airport": "Rajiv Gandhi International Airport",
+        "airportCode": "HYD",
+        "city": "Hyderabad",
+        "country": "India",
+        "date": "2026-09-17",
+        "time": "06:20 AM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Kempegowda International Airport",
+        "airportCode": "BLR",
+        "city": "Bengaluru",
+        "country": "India",
+        "date": "2026-09-17",
+        "time": "07:35 AM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "1h 15m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Boeing 737",
+        "registration": "VT-SPC2"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 2699,
+        "taxes": 324,
+        "fees": 199,
+        "totalPrice": 3222,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 27,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "Air Conditioning",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Budget",
+        "Early Morning"
+      ]
+    },
+    {
+      "flightId": "FL011",
+      "airline": {
+        "name": "Air India Express",
+        "code": "IX",
+        "logo": "https://picsum.photos/seed/airindiaexpress/200/100"
+      },
+      "flightNumber": "IX-1456",
+      "departure": {
+        "airport": "Chennai International Airport",
+        "airportCode": "MAA",
+        "city": "Chennai",
+        "country": "India",
+        "date": "2026-09-18",
+        "time": "07:45 AM",
+        "terminal": "Terminal 2"
+      },
+      "arrival": {
+        "airport": "Cochin International Airport",
+        "airportCode": "COK",
+        "city": "Kochi",
+        "country": "India",
+        "date": "2026-09-18",
+        "time": "09:00 AM",
+        "terminal": "Terminal 3"
+      },
+      "duration": "1h 15m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Boeing 737 MAX",
+        "registration": "VT-IX01"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 2799,
+        "taxes": 336,
+        "fees": 199,
+        "totalPrice": 3334,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 20,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "USB Charging",
+        "Air Conditioning"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Budget",
+        "Non-stop"
+      ]
+    },
+    {
+      "flightId": "FL012",
+      "airline": {
+        "name": "IndiGo",
+        "code": "6E",
+        "logo": "https://picsum.photos/seed/indigo4/200/100"
+      },
+      "flightNumber": "6E-455",
+      "departure": {
+        "airport": "Kempegowda International Airport",
+        "airportCode": "BLR",
+        "city": "Bengaluru",
+        "country": "India",
+        "date": "2026-09-18",
+        "time": "03:15 PM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Chennai International Airport",
+        "airportCode": "MAA",
+        "city": "Chennai",
+        "country": "India",
+        "date": "2026-09-18",
+        "time": "04:20 PM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "1h 05m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320",
+        "registration": "VT-IND4"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 2999,
+        "taxes": 360,
+        "fees": 199,
+        "totalPrice": 3558,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 35,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "WiFi",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Cheapest",
+        "Short Flight"
+      ]
+    },
+    {
+      "flightId": "FL013",
+      "airline": {
+        "name": "Air India",
+        "code": "AI",
+        "logo": "https://picsum.photos/seed/airindia3/200/100"
+      },
+      "flightNumber": "AI-173",
+      "departure": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-19",
+        "time": "11:00 PM",
+        "terminal": "Terminal 3"
+      },
+      "arrival": {
+        "airport": "Dubai International Airport",
+        "airportCode": "DXB",
+        "city": "Dubai",
+        "country": "UAE",
+        "date": "2026-09-20",
+        "time": "01:15 AM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "3h 45m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Boeing 787",
+        "registration": "VT-AIR3"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 15999,
+        "taxes": 1920,
+        "fees": 499,
+        "totalPrice": 18418,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "25 kg"
+      },
+      "seatsAvailable": 19,
+      "refundable": true,
+      "mealIncluded": true,
+      "amenities": [
+        "WiFi",
+        "In-flight Entertainment",
+        "Meal",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "International",
+        "Red Eye",
+        "Meal Included"
+      ]
+    },
+    {
+      "flightId": "FL014",
+      "airline": {
+        "name": "IndiGo",
+        "code": "6E",
+        "logo": "https://picsum.photos/seed/indigo5/200/100"
+      },
+      "flightNumber": "6E-1452",
+      "departure": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-20",
+        "time": "05:10 AM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-20",
+        "time": "07:20 AM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "2h 10m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A321neo",
+        "registration": "VT-IND5"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 4399,
+        "taxes": 528,
+        "fees": 199,
+        "totalPrice": 5126,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 29,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "WiFi",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Early Morning",
+        "Non-stop"
+      ]
+    },
+    {
+      "flightId": "FL015",
+      "airline": {
+        "name": "Akasa Air",
+        "code": "QP",
+        "logo": "https://picsum.photos/seed/akasa2/200/100"
+      },
+      "flightNumber": "QP-1789",
+      "departure": {
+        "airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-20",
+        "time": "12:40 PM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Goa International Airport",
+        "airportCode": "GOI",
+        "city": "Goa",
+        "country": "India",
+        "date": "2026-09-20",
+        "time": "01:45 PM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "1h 05m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Boeing 737 MAX",
+        "registration": "VT-AKA2"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 3299,
+        "taxes": 396,
+        "fees": 199,
+        "totalPrice": 3894,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 22,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "USB Charging",
+        "Air Conditioning"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Goa",
+        "Budget",
+        "Non-stop"
+      ]
+    },
+    {
+      "flightId": "FL016",
+      "airline": {
+        "name": "SpiceJet",
+        "code": "SG",
+        "logo": "https://picsum.photos/seed/spicejet3/200/100"
+      },
+      "flightNumber": "SG-5421",
+      "departure": {
+        "airport": "Mumbai International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-21",
+        "time": "04:30 PM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Jaipur International Airport",
+        "airportCode": "JAI",
+        "city": "Jaipur",
+        "country": "India",
+        "date": "2026-09-21",
+        "time": "06:15 PM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "1h 45m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Boeing 737",
+        "registration": "VT-SPC3"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 3799,
+        "taxes": 456,
+        "fees": 199,
+        "totalPrice": 4454,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 11,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "Air Conditioning",
+        "USB Charging"
+      ],
+      "status": "Delayed",
+      "tags": [
+        "Budget",
+        "Afternoon"
+      ]
+    },
+    {
+      "flightId": "FL017",
+      "airline": {
+        "name": "Air India",
+        "code": "AI",
+        "logo": "https://picsum.photos/seed/airindia4/200/100"
+      },
+      "flightNumber": "AI-612",
+      "departure": {
+        "airport": "Mumbai International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-21",
+        "time": "07:25 PM",
+        "terminal": "Terminal 2"
+      },
+      "arrival": {
+        "airport": "Chennai International Airport",
+        "airportCode": "MAA",
+        "city": "Chennai",
+        "country": "India",
+        "date": "2026-09-21",
+        "time": "09:15 PM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "1h 50m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320neo",
+        "registration": "VT-AIR4"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 4799,
+        "taxes": 576,
+        "fees": 199,
+        "totalPrice": 5574,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 17,
+      "refundable": true,
+      "mealIncluded": true,
+      "amenities": [
+        "WiFi",
+        "Meal",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Refundable",
+        "Meal Included"
+      ]
+    },
+    {
+      "flightId": "FL018",
+      "airline": {
+        "name": "IndiGo",
+        "code": "6E",
+        "logo": "https://picsum.photos/seed/indigo6/200/100"
+      },
+      "flightNumber": "6E-514",
+      "departure": {
+        "airport": "Rajiv Gandhi International Airport",
+        "airportCode": "HYD",
+        "city": "Hyderabad",
+        "country": "India",
+        "date": "2026-09-22",
+        "time": "09:40 AM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Kolkata International Airport",
+        "airportCode": "CCU",
+        "city": "Kolkata",
+        "country": "India",
+        "date": "2026-09-22",
+        "time": "11:55 AM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "2h 15m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320",
+        "registration": "VT-IND6"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 3999,
+        "taxes": 480,
+        "fees": 199,
+        "totalPrice": 4678,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 26,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "WiFi",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Non-stop",
+        "Morning Flight"
+      ]
+    },
+    {
+      "flightId": "FL019",
+      "airline": {
+        "name": "Vistara",
+        "code": "UK",
+        "logo": "https://picsum.photos/seed/vistara3/200/100"
+      },
+      "flightNumber": "UK-832",
+      "departure": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-22",
+        "time": "02:15 PM",
+        "terminal": "Terminal 3"
+      },
+      "arrival": {
+        "airport": "Chennai International Airport",
+        "airportCode": "MAA",
+        "city": "Chennai",
+        "country": "India",
+        "date": "2026-09-22",
+        "time": "05:00 PM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "2h 45m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A321",
+        "registration": "VT-VIS3"
+      },
+      "class": "Business",
+      "pricing": {
+        "basePrice": 9999,
+        "taxes": 1200,
+        "fees": 299,
+        "totalPrice": 11498,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "seatsAvailable": 5,
+      "refundable": true,
+      "mealIncluded": true,
+      "amenities": [
+        "WiFi",
+        "Premium Meal",
+        "Priority Boarding",
+        "Extra Legroom"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Business Class",
+        "Premium",
+        "Refundable"
+      ]
+    },
+    {
+      "flightId": "FL020",
+      "airline": {
+        "name": "IndiGo",
+        "code": "6E",
+        "logo": "https://picsum.photos/seed/indigo7/200/100"
+      },
+      "flightNumber": "6E-902",
+      "departure": {
+        "airport": "Kolkata International Airport",
+        "airportCode": "CCU",
+        "city": "Kolkata",
+        "country": "India",
+        "date": "2026-09-23",
+        "time": "06:50 AM",
+        "terminal": "Terminal 2"
+      },
+      "arrival": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-23",
+        "time": "09:05 AM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "2h 15m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320neo",
+        "registration": "VT-IND7"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 4299,
+        "taxes": 516,
+        "fees": 199,
+        "totalPrice": 5014,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 23,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "WiFi",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Cheapest",
+        "Early Morning"
+      ]
+    },
+    {
+      "flightId": "FL021",
+      "airline": {
+        "name": "Air India Express",
+        "code": "IX",
+        "logo": "https://picsum.photos/seed/airindiaexpress2/200/100"
+      },
+      "flightNumber": "IX-3021",
+      "departure": {
+        "airport": "Cochin International Airport",
+        "airportCode": "COK",
+        "city": "Kochi",
+        "country": "India",
+        "date": "2026-09-23",
+        "time": "10:15 AM",
+        "terminal": "Terminal 3"
+      },
+      "arrival": {
+        "airport": "Bengaluru International Airport",
+        "airportCode": "BLR",
+        "city": "Bengaluru",
+        "country": "India",
+        "date": "2026-09-23",
+        "time": "11:25 AM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "1h 10m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Boeing 737 MAX",
+        "registration": "VT-IX02"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 2899,
+        "taxes": 348,
+        "fees": 199,
+        "totalPrice": 3446,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 30,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "Air Conditioning",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Budget",
+        "Short Flight"
+      ]
+    },
+    {
+      "flightId": "FL022",
+      "airline": {
+        "name": "SpiceJet",
+        "code": "SG",
+        "logo": "https://picsum.photos/seed/spicejet4/200/100"
+      },
+      "flightNumber": "SG-4056",
+      "departure": {
+        "airport": "Jaipur International Airport",
+        "airportCode": "JAI",
+        "city": "Jaipur",
+        "country": "India",
+        "date": "2026-09-24",
+        "time": "01:20 PM",
+        "terminal": "Terminal 2"
+      },
+      "arrival": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-24",
+        "time": "02:20 PM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "1h 00m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Boeing 737",
+        "registration": "VT-SPC4"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 2499,
+        "taxes": 300,
+        "fees": 199,
+        "totalPrice": 2998,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 33,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "Air Conditioning",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Cheapest",
+        "Budget",
+        "Short Flight"
+      ]
+    },
+    {
+      "flightId": "FL023",
+      "airline": {
+        "name": "Air India",
+        "code": "AI",
+        "logo": "https://picsum.photos/seed/airindia5/200/100"
+      },
+      "flightNumber": "AI-984",
+      "departure": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-25",
+        "time": "09:30 AM",
+        "terminal": "Terminal 3"
+      },
+      "arrival": {
+        "airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-25",
+        "time": "11:40 AM",
+        "terminal": "Terminal 2"
+      },
+      "duration": "2h 10m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A321neo",
+        "registration": "VT-AIR5"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 5599,
+        "taxes": 672,
+        "fees": 199,
+        "totalPrice": 6470,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 15,
+      "refundable": true,
+      "mealIncluded": true,
+      "amenities": [
+        "WiFi",
+        "Meal",
+        "In-flight Entertainment"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Refundable",
+        "Meal Included"
+      ]
+    },
+    {
+      "flightId": "FL024",
+      "airline": {
+        "name": "IndiGo",
+        "code": "6E",
+        "logo": "https://picsum.photos/seed/indigo8/200/100"
+      },
+      "flightNumber": "6E-318",
+      "departure": {
+        "airport": "Chhatrapati Shivaji Maharaj International Airport",
+        "airportCode": "BOM",
+        "city": "Mumbai",
+        "country": "India",
+        "date": "2026-09-25",
+        "time": "06:00 PM",
+        "terminal": "Terminal 1"
+      },
+      "arrival": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-25",
+        "time": "08:10 PM",
+        "terminal": "Terminal 1"
+      },
+      "duration": "2h 10m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A320neo",
+        "registration": "VT-IND8"
+      },
+      "class": "Economy",
+      "pricing": {
+        "basePrice": 4699,
+        "taxes": 564,
+        "fees": 199,
+        "totalPrice": 5462,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "15 kg"
+      },
+      "seatsAvailable": 8,
+      "refundable": false,
+      "mealIncluded": false,
+      "amenities": [
+        "WiFi",
+        "USB Charging"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Evening",
+        "Non-stop"
+      ]
+    },
+    {
+      "flightId": "FL025",
+      "airline": {
+        "name": "Vistara",
+        "code": "UK",
+        "logo": "https://picsum.photos/seed/vistara4/200/100"
+      },
+      "flightNumber": "UK-921",
+      "departure": {
+        "airport": "Kempegowda International Airport",
+        "airportCode": "BLR",
+        "city": "Bengaluru",
+        "country": "India",
+        "date": "2026-09-26",
+        "time": "08:00 AM",
+        "terminal": "Terminal 2"
+      },
+      "arrival": {
+        "airport": "Indira Gandhi International Airport",
+        "airportCode": "DEL",
+        "city": "Delhi",
+        "country": "India",
+        "date": "2026-09-26",
+        "time": "10:40 AM",
+        "terminal": "Terminal 3"
+      },
+      "duration": "2h 40m",
+      "stops": {
+        "count": 0,
+        "type": "Non-stop"
+      },
+      "aircraft": {
+        "model": "Airbus A321",
+        "registration": "VT-VIS4"
+      },
+      "class": "Business",
+      "pricing": {
+        "basePrice": 10999,
+        "taxes": 1320,
+        "fees": 299,
+        "totalPrice": 12618,
+        "currency": "INR"
+      },
+      "baggage": {
+        "cabin": "7 kg",
+        "checkIn": "30 kg"
+      },
+      "seatsAvailable": 4,
+      "refundable": true,
+      "mealIncluded": true,
+      "amenities": [
+        "WiFi",
+        "Premium Meal",
+        "Priority Boarding",
+        "Extra Legroom",
+        "Lounge Access"
+      ],
+      "status": "On Time",
+      "tags": [
+        "Business Class",
+        "Premium",
+        "Lounge Access"
+      ]
+    }
+  ]
+}
