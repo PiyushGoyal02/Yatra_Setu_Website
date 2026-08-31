@@ -76,7 +76,6 @@ function Footer() {
 
   return (
     <footer className="ys-footer">
-      {/* ---------- Newsletter Strip ---------- */}
       <div className="ys-newsletter">
         <div className="ys-footer-container ys-newsletter-inner">
           <div>
@@ -96,7 +95,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* ---------- Main Footer Grid ---------- */}
       <div className="ys-footer-container ys-footer-main">
         <div className="ys-brand-col">
           <div className="ys-logo">
@@ -141,7 +139,6 @@ function Footer() {
         ))}
       </div>
 
-      {/* ---------- App Download + Trust Badges ---------- */}
       <div className="ys-footer-container ys-mid-strip">
         <div className="ys-app-block">
           <h4>Get the YatraSetu App</h4>
@@ -180,7 +177,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* ---------- Bottom Bar ---------- */}
       <div className="ys-footer-bottom">
         <div className="ys-footer-container ys-bottom-inner">
           <p>© {currentYear} YatraSetu. All rights reserved.</p>

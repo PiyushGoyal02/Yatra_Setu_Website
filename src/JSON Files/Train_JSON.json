@@ -1,0 +1,1112 @@
+[
+  {
+    "_id": "TRAIN001",
+    "trainNumber": "12951",
+    "trainName": "Mumbai Rajdhani Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "17:00",
+        "stationCode": "MMCT",
+        "stationName": "Mumbai Central"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "08:32",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "15h 32m",
+    "stops": [
+      {
+        "count": 5,
+        "type": "5 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2150
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN002",
+    "trainNumber": "12952",
+    "trainName": "Mumbai Rajdhani Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "17:30",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "09:05",
+        "stationCode": "MMCT",
+        "stationName": "Mumbai Central"
+      }
+    ],
+    "duration": "15h 35m",
+    "stops": [
+      {
+        "count": 5,
+        "type": "5 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2200
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN003",
+    "trainNumber": "12002",
+    "trainName": "Bhopal Shatabdi Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "06:00",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "14:25",
+        "stationCode": "RKMP",
+        "stationName": "Rani Kamlapati"
+      }
+    ],
+    "duration": "8h 25m",
+    "stops": [
+      {
+        "count": 6,
+        "type": "6 Stops"
+      }
+    ],
+    "classes": ["CC", "EC"],
+    "pricing": [
+      {
+        "class": "CC",
+        "totalPrice": 1250
+      }
+    ],
+    "amenities": ["AC", "Meals", "WiFi"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN004",
+    "trainNumber": "12001",
+    "trainName": "Bhopal Shatabdi Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "15:00",
+        "stationCode": "RKMP",
+        "stationName": "Rani Kamlapati"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "23:25",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "8h 25m",
+    "stops": [
+      {
+        "count": 6,
+        "type": "6 Stops"
+      }
+    ],
+    "classes": ["CC", "EC"],
+    "pricing": [
+      {
+        "class": "CC",
+        "totalPrice": 1300
+      }
+    ],
+    "amenities": ["AC", "Meals", "WiFi"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN005",
+    "trainNumber": "12424",
+    "trainName": "New Delhi Dibrugarh Rajdhani",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "16:10",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "07:00",
+        "stationCode": "DBRG",
+        "stationName": "Dibrugarh"
+      }
+    ],
+    "duration": "38h 50m",
+    "stops": [
+      {
+        "count": 12,
+        "type": "12 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2650
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN006",
+    "trainNumber": "12423",
+    "trainName": "Dibrugarh Rajdhani Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "21:00",
+        "stationCode": "DBRG",
+        "stationName": "Dibrugarh"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "11:30",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "38h 30m",
+    "stops": [
+      {
+        "count": 12,
+        "type": "12 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2700
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN007",
+    "trainNumber": "12301",
+    "trainName": "Howrah Rajdhani Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "16:55",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "10:00",
+        "stationCode": "HWH",
+        "stationName": "Howrah"
+      }
+    ],
+    "duration": "17h 05m",
+    "stops": [
+      {
+        "count": 6,
+        "type": "6 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2300
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN008",
+    "trainNumber": "12302",
+    "trainName": "Howrah Rajdhani Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "16:50",
+        "stationCode": "HWH",
+        "stationName": "Howrah"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "10:00",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "17h 10m",
+    "stops": [
+      {
+        "count": 6,
+        "type": "6 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2350
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN009",
+    "trainNumber": "12431",
+    "trainName": "Trivandrum Rajdhani Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "19:25",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "05:00",
+        "stationCode": "TVC",
+        "stationName": "Thiruvananthapuram"
+      }
+    ],
+    "duration": "33h 35m",
+    "stops": [
+      {
+        "count": 8,
+        "type": "8 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2900
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN010",
+    "trainNumber": "12432",
+    "trainName": "Trivandrum Rajdhani Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "19:15",
+        "stationCode": "TVC",
+        "stationName": "Thiruvananthapuram"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "05:30",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "34h 15m",
+    "stops": [
+      {
+        "count": 8,
+        "type": "8 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2950
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN011",
+    "trainNumber": "12957",
+    "trainName": "Swarna Jayanti Rajdhani",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "19:55",
+        "stationCode": "SBC",
+        "stationName": "KSR Bengaluru"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "06:45",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "34h 50m",
+    "stops": [
+      {
+        "count": 10,
+        "type": "10 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2750
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN012",
+    "trainNumber": "12958",
+    "trainName": "Swarna Jayanti Rajdhani",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "20:00",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "07:00",
+        "stationCode": "SBC",
+        "stationName": "KSR Bengaluru"
+      }
+    ],
+    "duration": "35h 00m",
+    "stops": [
+      {
+        "count": 10,
+        "type": "10 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2800
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN013",
+    "trainNumber": "12953",
+    "trainName": "August Kranti Rajdhani",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "17:40",
+        "stationCode": "MMCT",
+        "stationName": "Mumbai Central"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "09:43",
+        "stationCode": "NZM",
+        "stationName": "Hazrat Nizamuddin"
+      }
+    ],
+    "duration": "16h 03m",
+    "stops": [
+      {
+        "count": 5,
+        "type": "5 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2100
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN014",
+    "trainNumber": "12954",
+    "trainName": "August Kranti Rajdhani",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "17:55",
+        "stationCode": "NZM",
+        "stationName": "Hazrat Nizamuddin"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "09:45",
+        "stationCode": "MMCT",
+        "stationName": "Mumbai Central"
+      }
+    ],
+    "duration": "15h 50m",
+    "stops": [
+      {
+        "count": 5,
+        "type": "5 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 2150
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN015",
+    "trainNumber": "12425",
+    "trainName": "Jammu Rajdhani Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "20:40",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "05:45",
+        "stationCode": "JAT",
+        "stationName": "Jammu Tawi"
+      }
+    ],
+    "duration": "9h 05m",
+    "stops": [
+      {
+        "count": 4,
+        "type": "4 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1850
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN016",
+    "trainNumber": "12426",
+    "trainName": "Jammu Rajdhani Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "20:00",
+        "stationCode": "JAT",
+        "stationName": "Jammu Tawi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "05:00",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "9h 00m",
+    "stops": [
+      {
+        "count": 4,
+        "type": "4 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1800
+      }
+    ],
+    "amenities": ["AC", "Meals", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN017",
+    "trainNumber": "12009",
+    "trainName": "Mumbai Central Shatabdi",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "06:25",
+        "stationCode": "MMCT",
+        "stationName": "Mumbai Central"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "13:45",
+        "stationCode": "ADI",
+        "stationName": "Ahmedabad"
+      }
+    ],
+    "duration": "7h 20m",
+    "stops": [
+      {
+        "count": 8,
+        "type": "8 Stops"
+      }
+    ],
+    "classes": ["CC", "EC"],
+    "pricing": [
+      {
+        "class": "CC",
+        "totalPrice": 950
+      }
+    ],
+    "amenities": ["AC", "Meals", "WiFi"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN018",
+    "trainNumber": "12010",
+    "trainName": "Mumbai Central Shatabdi",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "14:40",
+        "stationCode": "ADI",
+        "stationName": "Ahmedabad"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "21:55",
+        "stationCode": "MMCT",
+        "stationName": "Mumbai Central"
+      }
+    ],
+    "duration": "7h 15m",
+    "stops": [
+      {
+        "count": 8,
+        "type": "8 Stops"
+      }
+    ],
+    "classes": ["CC", "EC"],
+    "pricing": [
+      {
+        "class": "CC",
+        "totalPrice": 1000
+      }
+    ],
+    "amenities": ["AC", "Meals", "WiFi"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN019",
+    "trainNumber": "12005",
+    "trainName": "Kalka Shatabdi Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "07:40",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "11:45",
+        "stationCode": "KLK",
+        "stationName": "Kalka"
+      }
+    ],
+    "duration": "4h 05m",
+    "stops": [
+      {
+        "count": 4,
+        "type": "4 Stops"
+      }
+    ],
+    "classes": ["CC", "EC"],
+    "pricing": [
+      {
+        "class": "CC",
+        "totalPrice": 850
+      }
+    ],
+    "amenities": ["AC", "Meals", "WiFi"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN020",
+    "trainNumber": "12006",
+    "trainName": "Kalka Shatabdi Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "17:45",
+        "stationCode": "KLK",
+        "stationName": "Kalka"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "21:55",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "4h 10m",
+    "stops": [
+      {
+        "count": 4,
+        "type": "4 Stops"
+      }
+    ],
+    "classes": ["CC", "EC"],
+    "pricing": [
+      {
+        "class": "CC",
+        "totalPrice": 900
+      }
+    ],
+    "amenities": ["AC", "Meals", "WiFi"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN021",
+    "trainNumber": "12903",
+    "trainName": "Golden Temple Mail",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "18:55",
+        "stationCode": "MMCT",
+        "stationName": "Mumbai Central"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "23:35",
+        "stationCode": "ASR",
+        "stationName": "Amritsar"
+      }
+    ],
+    "duration": "28h 40m",
+    "stops": [
+      {
+        "count": 18,
+        "type": "18 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1650
+      }
+    ],
+    "amenities": ["AC", "Pantry", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN022",
+    "trainNumber": "12904",
+    "trainName": "Golden Temple Mail",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "18:50",
+        "stationCode": "ASR",
+        "stationName": "Amritsar"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "23:20",
+        "stationCode": "MMCT",
+        "stationName": "Mumbai Central"
+      }
+    ],
+    "duration": "28h 30m",
+    "stops": [
+      {
+        "count": 18,
+        "type": "18 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1700
+      }
+    ],
+    "amenities": ["AC", "Pantry", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN023",
+    "trainNumber": "12801",
+    "trainName": "Purushottam Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "22:10",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "20:15",
+        "stationCode": "PURI",
+        "stationName": "Puri"
+      }
+    ],
+    "duration": "22h 05m",
+    "stops": [
+      {
+        "count": 16,
+        "type": "16 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1450
+      }
+    ],
+    "amenities": ["AC", "Pantry", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN024",
+    "trainNumber": "12802",
+    "trainName": "Purushottam Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "21:45",
+        "stationCode": "PURI",
+        "stationName": "Puri"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "20:00",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "22h 15m",
+    "stops": [
+      {
+        "count": 16,
+        "type": "16 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1500
+      }
+    ],
+    "amenities": ["AC", "Pantry", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN025",
+    "trainNumber": "12472",
+    "trainName": "Swaraj Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "08:55",
+        "stationCode": "BDTS",
+        "stationName": "Bandra Terminus"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "14:30",
+        "stationCode": "JAT",
+        "stationName": "Jammu Tawi"
+      }
+    ],
+    "duration": "29h 35m",
+    "stops": [
+      {
+        "count": 14,
+        "type": "14 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1750
+      }
+    ],
+    "amenities": ["AC", "Pantry", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN026",
+    "trainNumber": "12471",
+    "trainName": "Swaraj Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "08:10",
+        "stationCode": "JAT",
+        "stationName": "Jammu Tawi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "13:45",
+        "stationCode": "BDTS",
+        "stationName": "Bandra Terminus"
+      }
+    ],
+    "duration": "29h 35m",
+    "stops": [
+      {
+        "count": 14,
+        "type": "14 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1800
+      }
+    ],
+    "amenities": ["AC", "Pantry", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN027",
+    "trainNumber": "12555",
+    "trainName": "Gorakhpur Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "20:30",
+        "stationCode": "GKP",
+        "stationName": "Gorakhpur"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "07:10",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "10h 40m",
+    "stops": [
+      {
+        "count": 7,
+        "type": "7 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1200
+      }
+    ],
+    "amenities": ["AC", "Pantry"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN028",
+    "trainNumber": "12556",
+    "trainName": "Gorakhpur Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "21:10",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "07:50",
+        "stationCode": "GKP",
+        "stationName": "Gorakhpur"
+      }
+    ],
+    "duration": "10h 40m",
+    "stops": [
+      {
+        "count": 7,
+        "type": "7 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1250
+      }
+    ],
+    "amenities": ["AC", "Pantry"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN029",
+    "trainNumber": "12627",
+    "trainName": "Karnataka Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "21:15",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "06:30",
+        "stationCode": "SBC",
+        "stationName": "KSR Bengaluru"
+      }
+    ],
+    "duration": "33h 15m",
+    "stops": [
+      {
+        "count": 20,
+        "type": "20 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1900
+      }
+    ],
+    "amenities": ["AC", "Pantry", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  },
+  {
+    "_id": "TRAIN030",
+    "trainNumber": "12628",
+    "trainName": "Karnataka Express",
+    "operator": "Indian Railways",
+    "departure": [
+      {
+        "time": "19:20",
+        "stationCode": "SBC",
+        "stationName": "KSR Bengaluru"
+      }
+    ],
+    "arrival": [
+      {
+        "time": "04:45",
+        "stationCode": "NDLS",
+        "stationName": "New Delhi"
+      }
+    ],
+    "duration": "33h 25m",
+    "stops": [
+      {
+        "count": 20,
+        "type": "20 Stops"
+      }
+    ],
+    "classes": ["1A", "2A", "3A", "SL"],
+    "pricing": [
+      {
+        "class": "3A",
+        "totalPrice": 1950
+      }
+    ],
+    "amenities": ["AC", "Pantry", "Bedroll"],
+    "availability": "Available",
+    "buttonText": "Select"
+  }
+]
